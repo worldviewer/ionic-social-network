@@ -5,13 +5,13 @@ A mobile app that helps people to think like a scientist about current events.
 ## Defining the Problem of Modern Scientific Discourse
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/tree/master/www/img/phd071003.gif" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/phd071003.gif" />
 </p>
 
 Our traditional system of lectures and problem sets imprints upon most university graduates today a "positivist" approach to scientific discourse and education, which positions scientific communications as a uni-directional flow of information from experts to laypeople.  Many professional scientists today come away from the graduate programs' intensive emphasis upon memorization with a worldview which is observably detrimental to the process of scientific investigation.  It tends to take the assumptions of models for granted, and essentially treats the models as reality.  From that perspective, the underlying motives of scientific researchers can observably shift from investigation towards eliciting a particular aligning belief within the minds of laypeople.  For many topics today which will not experience any significant revision over many centuries, this approach can actually create efficient problem solvers.
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/tree/master/www/img/shmidt-whistleblower.jpg" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/shmidt-whistleblower.jpg" />
 </p>
 
 By sharp contrast, a number of universities have more contemporary physics education research (PER) programs today which emphasize a "constructivist" approach to science education and discourse.  In these programs, the focus is not so much upon truth, established science, memorization of exemplars, and conclusions; but rather upon the asking of good questions, the mapping out of debate, the resolution of scientific controversies, the quality of the conversation, adherence to scientific values, creative problem-solving and effective re-framing in the face of stubborn (aka "wicked") problems.  The underlying idea is that even though the philosophers are oftentimes correct that there is indeed one single truth, scientific investigators should nevertheless approach the more stubborn problems of science with a many-perspectives worldview.  This subtle distinction between philosophy of science and science education approaches has spilled much ink over the years, but it is truthfully not a complicated issue.
@@ -23,7 +23,7 @@ This decision lends some stability to scientific theory, which can be argued to 
 However, this approach comes with some costly side-effects -- namely that:
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/tree/master/www/img/shmidt-on-paradigms.jpg" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/shmidt-on-paradigms.jpg" />
 </p>
 
 1. Graduate students never actually learn of alternatives to their textbook theories which originate from alternative scientific frameworks, and this lack of awareness can severely affect their inferential skills.  There are numerous instances observable online today where academic researchers and graduate students are actually the last to know of certain scientific controversies.
@@ -31,25 +31,25 @@ However, this approach comes with some costly side-effects -- namely that:
 2. The focus upon problem-solving, to the detriment of a more concepts-first approach, undermines critical thinking insofar as it complicates an individual's ability to back out of an idea.  In order to question something, a person must be able to see the larger structure which contains it, *and to do so as they are learning it*.  In other words, they must be fluent in the larger sea of ideas which compete with it, which may even differ at the level of concepts and definitions.
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/tree/master/www/img/stephenson-innovation-starvation.jpg" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/stephenson-innovation-starvation.jpg" />
 </p>
 
 3. If there are any mistakes in this dominant scientific framework, then we should expect with a positivist approach that the entire community of scientists will collectively and righteously dismiss ideas which will may one day turn out to be recognized as superior to those currently taught.  Eventually, and predictably, these models will bear all of their lower-hanging fruit, and scientific discovery will then expensively derive more from tinkering and observation than from the theory itself.  This situation has been described by Neil Stephenson as <a href="http://www.wired.com/2011/10/stephenson-innovation-starvation/">"innovation starvation"</a>.
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/tree/master/www/img/shmidt-on-paradigms.jpg" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/shmidt-on-paradigms.jpg" />
 </p>
 
 4. It should not be assumed that students knowledgeable in the dominant framework are skilled in the tacit ability to re-frame on stubborn problems.  It seems apparent that re-framing is a widespread problem amongst academics and laypeople alike.  Amongst CEO's, it is a highly valued skill that can make the difference between success and failure of a company; the scientific endeavor is probably no different.  The re-framing skill does not simply emerge from memorization of exemplars; it more likely evolves as a consequence of making crucial, rational decisions in an environment where there are lots of competing ideas (like in the sort of challenging case studies that Harvard business graduates must endure).  The existing graduate programs do not appear to train this soft skill, which should be alarming to people when it comes to important controversies like climate change.
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/tree/master/www/img/kegan-lahey-five-stages.png" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/kegan-lahey-five-stages.png" />
 </p>
 
 5. The dominant scientific framework's preference for certain sides of scientific controversies over others can create a special type of ignorance within even experts.  These blind spots are not simply lacking in thought.  <a href="https://www.youtube.com/watch?v=MgQutgSwY88">Daniel Kahneman</a> has shown that the mind is really two systems -- a slow rational System 2, and a far faster emotion-based, pattern-matching system known as System 1 -- and that where System 2 creates ignorance, System 1 will flourish.  This complex sequence of events tends to occur most often today as a reaction to information overload.  This plainly suggests that academia's decision to ignore against-the-maintream ideas and certain sides of controversies leads them to have irrational thoughts about the other sides of those arguments.  This is a problem faced by everybody, as System 1 is responsible for keeping people alive.
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/tree/master/www/img/kahneman-expert-bias.jpg" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/kahneman-expert-bias.jpg" />
 </p>
 
 6. The refusal to fully and meaningfully engage both sides of scientific controversies creates what I like to call "innovation bottlenecks".  As a methodology, such an approach assumes that it knows the answer to a big question when in fact the community of scientists have collectively decided not to rationally engage the other side of the issue.  Such an approach can be expected to be extremely costly to society's future standard of living insofar as these controversies can be expected to basically block certain scientific discoveries.
