@@ -58,6 +58,10 @@ However, this approach comes with some costly side-effects -- namely that:
 
 My name is Chris Reeve and I've spent a decade closely following the issues faced by a group of scientific theorists who have been engaged in a bitter dispute for more than half a century.  The two sides of this debate publish in two different scientific journals -- the _Astrophysical Journal_ and IEEE's _Transactions on Plasma Science_.  I've used this highly complex debate over how to model the universe's fundamental state for matter, *plasma*, as a prototypical controversy to design a solution.  My approach contrasts sharply with <a href="https://plus.google.com/+ChrisReeveOnlineScientificDiscourseIsBroken/posts/ZyWHQxTUk53">Google's approach for their truth engine</a>, where they test their system with the debate over Obama's birth certificate.
 
+<p align="center">
+  <a href="http://arxiv.org/abs/1502.03519"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/google-truth-engine-obama.jpg" /></a>
+</p>
+
 The design of the Worldviewer app below is based upon this decade of observation, and about four years of contemplating a design.  I consider this app to be a prototype, and I hope to use it to advance my design to the next stage: A graphical interface on both the mobile and desktop platforms.
 
 ## The MVP (Minimum Viable Product)
