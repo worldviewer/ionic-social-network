@@ -54,7 +54,7 @@ However, this approach comes with some costly side-effects -- namely that:
 
 * The refusal to fully and meaningfully engage both sides of scientific controversies creates what I like to call "innovation bottlenecks".  As a methodology, such an approach assumes that it knows the answer to a big question when in fact the community of scientists have collectively decided not to rationally engage the other side of the issue.  Such an approach can be expected to be extremely costly to society's future standard of living insofar as these controversies can be expected to basically block certain scientific discoveries.
 
-## A Prototype for a Solution: A Mobile Gesture-Based Scientific Article Reader that Teaches Epistemology and Worldviews through Use of the App
+## A Prototype for a Solution: A Mobile Gesture-Based Scientific Article Reader that Teaches Epistemology, Worldviews, History and Philosophy of Science through Use of the App
 
 My name is Chris Reeve and I've spent a decade closely following the issues faced by a group of scientific theorists who have been engaged in a bitter dispute for more than half a century.  The two sides of this debate publish in two different scientific journals -- the _Astrophysical Journal_ and IEEE's _Transactions on Plasma Science_.  I've used this highly complex debate over how to model the universe's fundamental state for matter, *plasma*, as a prototypical controversy to design a solution.  My approach contrasts sharply with <a href="https://plus.google.com/+ChrisReeveOnlineScientificDiscourseIsBroken/posts/ZyWHQxTUk53">Google's approach for their truth engine</a>, where they test their system with the debate over Obama's birth certificate.
 
@@ -266,52 +266,71 @@ Same basic interface as mobile ...
 
 + A prominent link to a 2nd page which includes my Udemy course on "How to Think Like a Scientist", which explains the theory behind the app, and goes through examples.
 
-> -> <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/01-gplus-hannes-alfven-bio.jpg">Start strong with Alfven's story</a>
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/01-gplus-hannes-alfven-bio.jpg">Start strong with Alfven's story</a>
+
 >    "What makes science perplexing is that the observations do not arrive in 
 >    an order which facilitates sensemaking.  Thus, part of the riddle of 
 >    science is overcoming the momentum of prior, foggy ideas sufficient to 
 >    see nature as it truly is."
-> -> <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/02-gplus-subtropical-arctic.jpg">Subtropical Arctic</a>
+
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/02-gplus-subtropical-arctic.jpg">Subtropical Arctic</a>
+
 >    "We live in a newfound age of information overload, but we've so far 
 >    failed to meaningfully engage the contradictions of modern science.  We 
 >    want to feel that we know, and we selectively use information to service 
 >    that psychological goal." (show quote on contradiction between trees and 
 >    eocene subtropical)
-> -> <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/03-gplus-venus.jpg">Venus' heat</a>
+
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/03-gplus-venus.jpg">Venus' heat</a>
+
 >    "Many claims we today take for granted are truthfully based on nothing 
 >    but assumptions, and the force-fitting of observations to scientific 
 >    theory."
-> -> <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/04-gplus-radio-waves.jpg">Radio waves from space</a>
+
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/04-gplus-radio-waves.jpg">Radio waves from space</a>
+
 >    "History of science is clear that the experts are frequently wrong.  When 
 >    radio waves were first observed by radio engineers coming from space, 
 >    astronomers could not dream up any rational way by which the radio waves 
 >    could be generated, so they assumed it was either a mistake or a hoax."
-> -> <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/05-gplus-laser.jpg">Laser</a>
+
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/05-gplus-laser.jpg">Laser</a>
+
 >    "When the laser's precursor, the maser, was invented, the leading 
 >    scientific theorists of the day told its inventor that it was 
 >    impossible.  Such protests were not offhand opinions concerning the 
 >    obscure aspects of physics; they came from the marrow of these men's 
 >    bones."
-> -> <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/06-gplus-firestone.jpg">Firestone</a>
+
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/06-gplus-firestone.jpg">Firestone</a>
+
 >    "Many important scientific observations today go unnoticed for the simple 
 >    reason that they deviate from the narrative we've been taught." (half a 
 >    million mammoth caracasses quote + radioactive black mat + pics of 
 >    meteorites embedded within tusks)
-> -> <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/07-gplus-uniformitarianism.jpg">Petroglyphs</a>
+
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/07-gplus-uniformitarianism.jpg">Petroglyphs</a>
+
 >    "There are entire scientific disciplines which are blocked from public 
 >    awareness because they are based upon a concept which the public does not 
 >    understand."
-> -> <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/08-the-cosmic-web.jpg">Plasma fractal</a>
+
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/08-the-cosmic-web.jpg">Plasma fractal</a>
+
 >    "Consider this unexpected fact: The fourth state of matter, plasma, can 
 >    naturally form complex electrical structures like wires and hubs.  What 
 >    if I then told you that plasma is the universe's dominant state of 
 >    matter? ..."
-> -> Peratt's galactic simulation
+
+* <a href="http://www.plasma-universe.com/Galaxy_formation">Peratt's galactic simulation</a>
+
 >    "... And that government researchers working on government supercomputers 
 >    have simulated galaxies with the correct rotational properties without 
 >    the need for dark matter, simply by fitting our cosmic plasma models to 
 >    observations of this laboratory plasma?"
-> -> Plato's Dialogues
+
+* <a href="https://books.google.com/books?id=6IJEAAAAIAAJ&pg=PA367&lpg=PA367">Plato's Dialogues</a>
+
 >    "Don't you think that we should revisit some of our former ideas in light 
 >    of these recent discoveries?  The riddle of the cosmos waits for us to 
 >    engage it on ITS terms, not ours."
