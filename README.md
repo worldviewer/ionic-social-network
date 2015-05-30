@@ -23,7 +23,7 @@ This decision lends some stability to scientific theory, which can be argued to 
 However, this approach comes with some costly side-effects -- namely that:
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/shmidt-on-paradigms.jpg" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/schmidt-on-paradigms.jpg" />
 </p>
 
 1. Graduate students never actually learn of alternatives to their textbook theories which originate from alternative scientific frameworks, and this lack of awareness can severely affect their inferential skills.  There are numerous instances observable online today where academic researchers and graduate students are actually the last to know of certain scientific controversies.
@@ -37,7 +37,7 @@ However, this approach comes with some costly side-effects -- namely that:
 3. If there are any mistakes in this dominant scientific framework, then we should expect with a positivist approach that the entire community of scientists will collectively and righteously dismiss ideas which will may one day turn out to be recognized as superior to those currently taught.  Eventually, and predictably, these models will bear all of their lower-hanging fruit, and scientific discovery will then expensively derive more from tinkering and observation than from the theory itself.  This situation has been described by Neil Stephenson as <a href="http://www.wired.com/2011/10/stephenson-innovation-starvation/">"innovation starvation"</a>.
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/shmidt-on-paradigms.jpg" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/schmidt-on-critical-thinkers.jpg" />
 </p>
 
 4. It should not be assumed that students knowledgeable in the dominant framework are skilled in the tacit ability to re-frame on stubborn problems.  It seems apparent that re-framing is a widespread problem amongst academics and laypeople alike.  Amongst CEO's, it is a highly valued skill that can make the difference between success and failure of a company; the scientific endeavor is probably no different.  The re-framing skill does not simply emerge from memorization of exemplars; it more likely evolves as a consequence of making crucial, rational decisions in an environment where there are lots of competing ideas (like in the sort of challenging case studies that Harvard business graduates must endure).  The existing graduate programs do not appear to train this soft skill, which should be alarming to people when it comes to important controversies like climate change.
