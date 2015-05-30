@@ -77,7 +77,9 @@ The design of the Worldviewer app below is based upon this decade of observation
 
 ### Separated, But Weakly-Interacting, Levels of Scientific Discourse
 
-The basic idea is that there are 3 fundamental types of conversations which we need to have for every scientific press release or paper, in order to become better scientific thinkers:
+Different people engage scientific theory for different reasons.  Traditionally, all of them have essentially been forced into the same virtual "room", where they predictably clash.  The scientific explorer who is seeking out good questions and entertaining novel hypotheses will in this traditional landscape be forced to directly speak with the modeler who is more focused upon quantifying their preferred model.  The problem is that these two distinct groups exhibit different values for the scope of their investigation.  And these values can over time change as a reaction to their objectives.  We are all on different parts of the same journey.  This strongly suggests that we need some amount of separation to facilitate these groups working as one cohesive organism towards their larger common objective -- just as the organs of a body exhibit both separation and communication with one another.
+
+The basic idea with the worldviewer app is that there are 3 fundamental types of conversations which we need to have for every scientific press release or paper, in order to become better scientific thinkers:
 
 - Propositional
 - Model-based
@@ -115,7 +117,7 @@ Swiping down from the original article takes the user to the **believable narrat
 
 Swiping down yet further takes them to **other similar articles** -- a mix of related resources voted on by users, but also suggested by the system (via topic modeling/mapping) and hand-populated by administrators.  The user can continue to swipe downwards many levels to retrieve yet more related articles.
 
-*The core of this idea is to induce people to visualize the inherent structure of science within their heads*.  Shortcuts to these epistemological layers will not be provided, in order to ensure that this hierarchy is imprinted upon the user's memory.  The interface will enforce as a matter of habit these different aspects of *thinking like a scientist*.  Most importantly, by observing the relationship of the article to the content in each of these levels, the users will learn what a **worldview** is.  This failure to understand what a scientific worldview is is a very serious problem that has plagued modern scientific discourse.
+*The core of this idea is to induce people to visualize the inherent structure of science within their heads* -- an idea which sources from physics education researcher <a href="https://www.narst.org/publications/research/Metacogn.cfm">Bob Gowan</a>.  Direct shortcuts to these epistemological layers will not be provided, in order to ensure that this hierarchy is imprinted upon the user's memory; what will be provided is ready access to the diagram, which users can use to facilitate cognitively visualizing the app's navigation.  The interface will enforce as a matter of habit these different aspects of *thinking like a scientist*.  Most importantly, by observing the relationship of the article or paper to the content in each of these levels, the users will learn what a **worldview** is.  This failure to understand what a scientific worldview is is a very serious problem that has plagued modern scientific discourse.
 
 Beyond that, this seems to me an excellent way to break up the various ways we can talk about some resource into their unique spaces, insofar as it creates a separation of concerns for scientific discourse which nevertheless weakly interact.  Later, as I become more knowledgeable about graphics, I can stick with this infrastructure, and simply upgrade the pages, one at a time.
 
@@ -197,22 +199,15 @@ There are three fundamental design decisions driving my choice of technologies:
 
 ### Goal: The Quickie Model Search
 
-Adam has just heard from somebody online of a scientific theory he's never been exposed to before: *electric joule heating*.  It came up in an informal debate online.  Adam has for many years followed the dire situation of climate change, but under the impression that there were no other possible explanations.  He's read it stated many times that the Sun cannot be responsible for changes to the planet's temperature.  He did a Google search on "electric joule heating", and the responses were very minimal.  And not only that, but the information was all scattered through a dozen websites.  He really just wanted a quick explanation of what it was, and preferably from a site where the arguments are not so obviously one-sided.  He wants to  formulate his own opinion.
+Adam has just heard from somebody online of a scientific theory he's never been exposed to before: *electric joule heating*.  It came up in an informal debate online.  Adam has for many years followed what he perceives as the dire situation of climate change, but under the impression that there were no other possible explanations.  He's read it stated many times by professional scientists and science journalists that the Sun cannot possibly be responsible for changes to the planet's temperature, and he takes these professionally-trained scientists at their word.
 
-So, he goes to http://thepeer.reviews and he sees a simple page with three text boxes and five buttons:
+Adam did a Google search on "electric joule heating", and the responses were very minimal, highly technical and somewhat scattered over a dozen websites.  He started to feel a bit anxious that maybe this wasn't really all that important, and that he should perhaps get back to the work he was *supposed* to be doing.  He really just wanted a quick explanation of what it was; he wasn't looking to take on a lengthy investigation.  And he ultimately wants to formulate his own opinion -- implying that he would prefer to see both sides of the debate.
 
-> [text box]
-> Analyze a Scientific Thread, Article or Paper
-> 
-> [text box]
-> Ask About a Scientific Controversy or an Against-the-Mainstream Idea
-> 
-> [text box]
-> Search for a Scientific Concept, Model or Worldview
-> 
-> Help by Mapping Out a Scientific Controversy
-> 
-> Learn to *Think Like a Scientist*, Without Actually Getting a PhD
+So, he goes to http://thepeer.reviews and he sees the following screen:
+
+<p align="center">
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/ionic-creator-homepage.jpg" />
+</p>
 
 He enters "electric joule heating" and clicks on the third link for search.  The page changes to a profile of the concept.  This second page is sort of reminiscent of other social networking interfaces which portray people, except that it's about a scientific model.
 
@@ -222,16 +217,19 @@ At the top of the screen is this brief explanation:
 > electrically heated by the flow of charged particles coming from the Sun and 
 > other cosmic phenomena.  Conventional theory models this flow of charged 
 > particles fundamentally as a fluid, but these models have been in dispute 
-> since their inception, and the alternative hypothesis likens these moving 
+> since their inception.  One alternative hypothesis likens these moving 
 > charges to an electric current.  Advocates point to the fact that the solar 
 > wind is oftentimes guided by planetary magnetic fields into the poles, and 
 > the presence of hot spots at these poles for a number of planets within our 
-> solar system.
+> solar system is suggestive of the idea that this flow of charged particles
+> can heat up the planets it is guided into.
 >
 > Status: Electric joule heating is not widely known, and much of the data 
 > necessary to judge the idea has yet to be taken.  No known experiments or 
 > observational satellites are currently planned to test it.  The concept is
 > not taught to climatologists today, and it appears in no climate textbooks.
+> Electric joule heating is a natural implication of the Electric Universe
+> paradigm.
 >
 > Resident Experts: @chrisreeve, @jimjohnson, @cultureclash, @masterdebator
 > [clickable links to profile pages]
@@ -261,6 +259,8 @@ At the top of the screen is this brief explanation:
 > 
 > Tags: [complete list]
 
+The next time that Adam sees a scientific press release talk about melting ice at the poles, he remembers back to those hot spots on other planets.
+
 ### Goal: The Speed of Gravity
 
 Alex is a fan of science documentaries and science journalism sites like space.com.  He was talking to somebody online, and overheard an unusual claim that he couldn't reconcile with anything he had ever learned about Einstein's Relativity: He heard that if the speed of gravity was the speed of light, then simulations had demonstrated that the solar system could not possibly hold itself together.  He reasoned that it has to be untrue because he would have already heard of the claim in one of the shows he regularly watches.  This person must be a crackpot pushing some pet theory, so he went to http://thepeer.reviews/ 
@@ -272,6 +272,8 @@ Alex is a fan of science documentaries and science journalism sites like space.c
 Arrive at homepage, http://thepeer.reviews
 
 Same basic interface as mobile ...
+
++ Learn to *Think Like a Scientist*, Without Actually Getting a PhD
 
 + A prominent link to a 2nd page which includes my Udemy course on "How to Think Like a Scientist", which explains the theory behind the app, and goes through examples.
 
