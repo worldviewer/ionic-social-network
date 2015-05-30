@@ -102,6 +102,10 @@ One more swipe up takes the person to the **model view**, which by contrast is f
 
 Yet another swipe up takes them to the **clash of worldviews** over the article's claims/observations, from competing worldviews.  Both convergence and divergence are visible from this level, insofar as the nodes can branch off to questions or models.  There is a search feature at this level which specifically searches on scientific controversies.  Each controversy is represented by a tag, and can encompass numerous nodes.
 
+<p align="center">
+  <a href="https://plus.google.com/108466508041843226480/posts/Q12YRp5rwFP"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/kahneman-two-systems-of-the-mind.jpg" /></a>
+</p>
+
 Swiping down from the original article takes the user to the **believable narratives**, aka "associative coherence".  This would logically place this lower-level system of pattern-matching beneath System 2, and the article would symbolically rest between these two systems of the mind.  A search box brings up particular instances of associative coherence.
 
 Swiping down yet further takes them to **other similar articles** -- a mix of related resources voted on by users, but also suggested by the system (via topic modeling/mapping) and hand-populated by administrators.  The user can continue to swipe downwards many levels to retrieve yet more related articles.
