@@ -28,6 +28,10 @@ However, this approach comes with some costly side-effects -- namely that:
 
 * Graduate students never actually learn of alternatives to their textbook theories which originate from alternative scientific frameworks, and this lack of awareness can severely affect their inferential skills.  There are numerous instances observable online today where academic researchers and graduate students are actually the last to know of certain scientific controversies.
 
+<p align="center">
+  <a href="http://www.amazon.com/Immunity-Change-Potential-Organization-Leadership/dp/1422117367"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/kegan-lahey-five-stages.png" /></a>
+</p>
+
 * The focus upon problem-solving, to the detriment of a more concepts-first approach, undermines critical thinking insofar as it complicates an individual's ability to back out of an idea.  In order to question something, a person must be able to see the larger structure which contains it, *and to do so as they are learning it*.  In other words, they must be fluent in the larger sea of ideas which compete with it, which may even differ at the level of concepts and definitions.
 
 <p align="center">
@@ -43,7 +47,7 @@ However, this approach comes with some costly side-effects -- namely that:
 * It should not be assumed that students knowledgeable in the dominant framework are skilled in the tacit ability to re-frame on stubborn problems.  It seems apparent that re-framing is a widespread problem amongst academics and laypeople alike.  Amongst CEO's, it is a highly valued skill that can make the difference between success and failure of a company; the scientific endeavor is probably no different.  The re-framing skill does not simply emerge from memorization of exemplars; it more likely evolves as a consequence of making crucial, rational decisions in an environment where there are lots of competing ideas (like in the sort of challenging case studies that Harvard business graduates must endure).  The existing graduate programs do not appear to train this soft skill, which should be alarming to people when it comes to important controversies like climate change.
 
 <p align="center">
-  <a href="http://www.amazon.com/Immunity-Change-Potential-Organization-Leadership/dp/1422117367"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/kegan-lahey-five-stages.png" /></a>
+  <a href="https://plus.google.com/+ChrisReeveOnlineScientificDiscourseIsBroken/posts/9MHHCUY38Cz"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/conspiracy-theorists.jpg" /></a>
 </p>
 
 * The dominant scientific framework's preference for certain sides of scientific controversies over others can create a special type of ignorance within even experts.  These blind spots are not simply lacking in thought.  <a href="https://www.youtube.com/watch?v=MgQutgSwY88">Daniel Kahneman</a> has shown that the mind is really two systems -- a slow rational System 2, and a far faster emotion-based, pattern-matching system known as System 1 -- and that where System 2 creates ignorance, System 1 will flourish.  This complex sequence of events tends to occur most often today as a reaction to information overload.  This plainly suggests that academia's decision to ignore against-the-maintream ideas and certain sides of controversies leads them to have irrational thoughts about the other sides of those arguments.  This is a problem faced by everybody, as System 1 is responsible for keeping people alive.
