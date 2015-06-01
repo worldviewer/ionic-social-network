@@ -203,7 +203,7 @@ Adam has just heard from somebody online of a scientific theory he's never been 
 
 Adam did a Google search on "electric joule heating", and there weren't a lot of search hits like with other climate change topics.  He also noticed that of the ones that ame up, they were highly technical and somewhat scattered over a dozen websites.  He started to feel a bit anxious that maybe this wasn't really all that important, and that he should perhaps get back to the work he was *supposed* to be doing.  He really just wanted a quick explanation of what it was; he wasn't looking to take on a lengthy investigation.
 
-So, he goes to http://thepeer.reviews and he sees the following screen:
+Adam goes to http://thepeer.reviews and he sees the following screen:
 
 <p align="center">
   <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/ionic-creator-homepage.jpg" />
@@ -234,19 +234,22 @@ At the top of the screen is this brief explanation:
 > Resident Experts: @chrisreeve, @jimjohnson, @cultureclash, @masterdebator
 > [clickable links to profile pages]
 > 
+> Key Concepts: a zoomable concept map showing the superordinate concepts, 
+> followed by a shortened list of more detailed concept maps
+> 
+> Infographics: [shortened list of Internet links]
+> 
 > Popular Science Articles (Start Here): [shortened list of Internet links]
 > 
 > Best Forum Threads: [shortened list of Internet links]
 > 
-> Journal Articles: [shortened list of Internet links]
+> Peer-Reviewed Research: [shortened list of Internet links]
 > 
 > Books Related to this Subject: [shortened list of Amazon.com links]
 > 
-> Videos: [shortened list of YouTube and Vimeo links]
+> Audio & Video: [shortened list of Internet links]
 > 
-> Relevant Wikipedia or Other Wiki Entries: See http://www.plasma-universe.com.
-> 
-> Recent Relevant Activity: [shortened list of site links]
+> Arguments Against: [shortened list]
 > 
 > Prominent Critics: Leif Svaalgard is an expert in the space sciences who 
 > disagrees with this approach to modeling the solar wind.
@@ -257,7 +260,9 @@ At the top of the screen is this brief explanation:
 > Tim Thompson has a very long history of opposing this group of theorists.
 > Tim is an astrophysicist who is very active at ---.
 > 
-> Tags: [complete list]
+> Recent Relevant Activity: [Post-MVP: shortened list of site links]
+> 
+> Tags: [Post-MVP: complete list]
 
 The next time that Adam sees a scientific press release talk about melting ice at the poles, he remembers back to those hot spots on other planets.
 
