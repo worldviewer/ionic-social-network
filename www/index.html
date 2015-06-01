@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>ThePeer.Reviews - Models</title>
+    <title>ThePeer.Reviews</title>
 
-    <link href="/css/preview-frame.css" rel="stylesheet">
-    <link href="/lib/ionic.css" rel="stylesheet">
+    <!-- Not sure why Ionic Creator wants to use this preview-frame.css file -->
+    <!-- <link href="css/preview-frame.css" rel="stylesheet"> -->
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
 
     <!-- ionic/angularjs js -->
-    <script src="/lib/ionic.bundle.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -50,22 +54,17 @@
         
         .state('homepage', {
             url: '/',
-            templateUrl: 'page3.html'
+            templateUrl: 'homepage.html'
         })
         
-        .state('page4', {
-            url: '/search',
-            templateUrl: 'page4.html'
-        })
-        
-        .state('page5', {
+        .state('template', {
             url: '/tabs',
-            templateUrl: 'page5.html'
+            templateUrl: 'template.html'
         })
         
-        .state('page6', {
+        .state('models', {
             url: '/models',
-            templateUrl: 'page6.html'
+            templateUrl: 'models.html'
         });
 
         // if none of the above states are matched, use this as the fallback
@@ -86,55 +85,68 @@
         </div>
     </div>
 
-    <script id="page3.html" type="text/ng-template">
+    <script id="homepage.html" type="text/ng-template">
+
     <ion-view title="ThePeer.Reviews">
         <ion-content padding="true" class="has-header">
+
             <form>
+
                 <label class="item item-input" name="analyze">
                     <span class="input-label">Analyze</span>
                     <input type="text" placeholder="URL">
                 </label>
+
                 <button class="button button-stable button-block">Analyze Scientific Content</button>
             </form>
+
             <div class="spacer" style="width: 300px; height: 28px;"></div>
+
             <form>
+
                 <label class="item item-input" name="question">
                     <span class="input-label">Ask</span>
                     <input type="text" placeholder="Question">
                 </label>
+
                 <button class="button button-stable button-block">Ask a Scientific Question</button>
             </form>
+
             <div class="spacer" style="width: 300px; height: 23px;"></div>
+
             <form>
+
                 <label class="item item-input">
                     <span class="input-label">Search</span>
                     <input type="text" placeholder="Concept/Model/Worldview">
                 </label>
             </form>
+
             <button class="button button-stable button-block">Search</button>
             <div class="spacer" style="width: 300px; height: 25px;"></div>
             <button class="button button-stable button-block">Browse Controversies</button>
+
         </ion-content>
     </ion-view>
+
     </script>
 
-    <script id="page4.html" type="text/ng-template">
-    <ion-view title="Search Results">
-    </ion-view>
-    </script>
-
-    <script id="page5.html" type="text/ng-template">
+    <script id="template.html" type="text/ng-template">
         <ion-view title="Search Results">
             <ion-tabs class="tabs-stable tabs-icon-top">
+
                 <ion-tab title="Help" icon="ion-help">
                     <ion-content padding="true" class="has-header"></ion-content>
                 </ion-tab>
+
                 <ion-tab title="Search" icon="ion-search">
                     <ion-content padding="true" class="has-header"></ion-content>
                 </ion-tab>
+
                 <ion-tab title="Article" icon="ion-document-text">
                     <ion-content padding="true" class="has-header"></ion-content>
                 </ion-tab>
+
             </ion-tabs>
         </ion-view>
     </script>
@@ -142,7 +154,7 @@
 <!--                     <form>
                         <ion-list></ion-list>
                     </form>
-                    <ion-list>
+                    <ion-list item-text-wrap>
                         <ion-item class="item-thumbnail-left">
                             <img src="/img/avatar-img.png">
                             <h2>Concept</h2>
@@ -152,14 +164,16 @@
                     <div class="spacer" style="width: 300px; height: 22px;"></div>
  -->
 
-    <script id="page6.html" type="text/ng-template">
-        <ion-view title="Model">
+    <script id="models.html" type="text/ng-template">
+        <ion-view title="Model: Electric Joule Heating">
 
             <ion-content padding="true" class="has-header">
 
-                // <form>
-                //     <ion-list></ion-list>
-                // </form>
+                <!--
+                <form>
+                    <ion-list></ion-list>
+                </form>
+                -->
 
                 <h3>Electric Joule Heating</h3>
                 <div>
@@ -169,7 +183,9 @@
                         this flow of charged particles can heat up the planets it is guided into.</p>
 
                     <ion-list>
-                        <ion-item>See more claims ...</ion-item>
+
+                        <a class="item item-icon-left" href="#"><i class="icon ion-quote"></i>
+                        See more claims ...</a>
                     </ion-list>
                 </div>
 
@@ -180,46 +196,51 @@
 
                 <h3>Advocates / Experts</h3>
                 <div>
-                    <ion-list>
+                    <ion-list class="item-text-wrap">
                         <ion-item class="item-thumbnail-left">
                             <img src="http://i.imgur.com/yD6vBRp.jpg">
-                            <h2>@chrisreeve</h2>
+                            <h2>@ChrisReeve</h2>
                             <p>Layperson Advocate</p>
                         </ion-item>
 
                         <ion-item class="item-thumbnail-left">
                             <img src="http://i.imgur.com/mbeC3Je.jpg">
-                            <h2>@billnichols</h2>
+                            <h2>@BillNichols</h2>
                             <p>Atmospheric Scientist</p>
                         </ion-item>
 
                         <ion-item class="item-thumbnail-left">
                             <img src="http://i.imgur.com/24TB0Nr.jpg">
-                            <h2>@bendavidson</h2>
+                            <h2>@BenDavidson</h2>
                             <p>Theorist, SuspiciousObservers</p>
                         </ion-item>
 
                         <ion-item class="item-thumbnail-left">
                             <img src="http://i.imgur.com/ItIx0mW.jpg">
-                            <h2>@pierscorbyn</h2>
+                            <h2>@PiersCorbyn</h2>
                             <p>Theorist, WeatherAction</p>
                         </ion-item>
 
-                        <ion-item>See more experts ...</ion-item>
+                        <!-- Add in @BobJohnson as expert -->
+
+                        <a class="item item-icon-left" href="#"><i class="icon ion-university"></i>
+                        See more experts ...</a>
                     </ion-list>
                 </div>
 
                 <h3>Critiques</h3>
                 <div>
-                    <ion-list>
+                    <ion-list class="item-text-wrap">
                         <ion-item class="item-thumbnail-left">
                             <img src="http://i.imgur.com/M4upuKt.jpg">
-                            <h2>Leif Svalgaard</h2>
+                            <h2>@LeifSvalgaard</h2>
                             <p>WUWT&#39;s Resident Solar Expert</p>
-                            <img src="http://i.imgur.com/qdM6YqC.jpg">
                         </ion-item>
 
-                        <ion-item>See more critiques ...</ion-item>
+                        <img src="http://i.imgur.com/qdM6YqC.jpg">
+
+                        <a class="item item-icon-left" href="#"><i class="icon ion-android-warning"></i>
+                        See more critiques ...</a>
                     </ion-list>
                 </div>
 
@@ -228,26 +249,27 @@
                     <img src="http://i.imgur.com/y1gsktM.jpg">
                     <h3>Other Concept Maps</h3>
 
-                    <ion-list>
+                    <ion-list class="item-text-wrap">
                         <ion-item class="item-thumbnail-left">
                             <img src="http://i.imgur.com/yD6vBRp.jpg">
                             <h2>Electric Joule Heating</h2>
-                            <p>@chrisreeve</p>
+                            <p>@ChrisReeve</p>
                         </ion-item>
 
                         <ion-item class="item-thumbnail-left">
                             <img src="http://i.imgur.com/kpVQ1R0.jpg">
                             <h2>Cosmic Plasma Modeling</h2>
-                            <p>@jimjohnson</p>
+                            <p>@JimJohnson</p>
                         </ion-item>
 
                         <ion-item class="item-thumbnail-left">
                             <img src="http://i.imgur.com/poku6Ud.jpg">
                             <h2>The Electric Universe</h2>
-                            <p>@walthornhill</p>
+                            <p>@WalThornhill</p>
                         </ion-item>
 
-                        <ion-item>See more concept maps ...</ion-item>
+                        <a class="item item-icon-left" href="#"><i class="icon ion-network"></i>
+                        See more concept maps ...</a>
                     </ion-list>
                 </div>
 
@@ -255,17 +277,22 @@
                 <img src="http://i.imgur.com/ws4MupK.jpg">
                 <div class="spacer" style="width: 300px; height: 25px;"></div>
                 <img src="http://i.imgur.com/NozG4mC.jpg">
+
+                <!-- Add in Alfven bio infographic -->
   
                 <ion-list>
-                    <ion-item>See more infographics ...</ion-item>
+                    <a class="item item-icon-left" href="#"><i class="icon ion-android-list"></i>
+                    See more infographics ...</a>
                 </ion-list>
 
                 <h3>Popular Science Articles</h3>
-                <ion-list>
+                <ion-list class="item-text-wrap">
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/teMWMLy.jpg">
-                        <h2>Wattsupwiththat</h2>
-                        <p>Solar Wind Surprise</p>
+                        <h2>Solar Wind Surprise</h2>
+                        <p>@StuartWolpert</p>
+                        <p>@AnthonyWatts</p>
+                        <p>Wattsupwiththat Blog</p>
                     </ion-item>
                 </ion-list>
   
@@ -273,21 +300,23 @@
                 <img src="http://i.imgur.com/QwuA2VY.jpg">
                 <img src="http://i.imgur.com/qK8qyqC.jpg">
   
-                <ion-list>
+                <ion-list class="item-text-wrap">
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i573.photobucket.com/albums/ss180/Lkindr/TB/Circuit.jpg">
                         <h2>Global Warming in a Climate of Ignorance</h2>
-                        <p>Wal Thornhill</p>
+                        <p>@WalThornhill</p>
+                        <p>Holoscience.com</p>
                     </ion-item>
                 </ion-list>
   
                 <img src="http://i.imgur.com/UCyC3mn.jpg">
 
-                <ion-list>
+                <ion-list class="item-text-wrap">
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/TyY4aqm.jpg">
                         <h2>Science, Politics and Global Warming</h2>
-                        <p>Wal Thornhill</p>
+                        <p>@WalThornhill</p>
+                        <p>Holoscience.com</p>
                     </ion-item>
                 </ion-list>
 
@@ -295,22 +324,24 @@
                 <img src="http://i.imgur.com/O0KJmM7.jpg">
 
                 <ion-list>
-                    <ion-item>See more articles ...</ion-item>
+                    <a class="item item-icon-left" href="#"><i class="icon ion-document"></i>
+                    See more articles ...</a>
                 </ion-list>
 
                 <h3>Best Forum Threads</h3>
-                <ion-list>
+                <ion-list class="item-text-wrap">
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/fbNHVzJ.jpg">
-                        <h2>Thunderbolts.info</h2>
+                        <h2>@Thunderbolts.info</h2>
                         <p>Climate Change</p>
                     </ion-item>
 
-                    <ion-item>See more threads ...</ion-item>
+                    <a class="item item-icon-left" href="#"><i class="icon ion-chatboxes"></i>
+                    See more threads ...</a>
                 </ion-list>
 
                 <h3>Peer-Reviewed Research</h3>
-                <ion-list>
+                <ion-list class="item-text-wrap">
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/uiLbmj7.gif">
                         <h2>Possible reasons for underestimating Joule heating in global models: E-Field variability, spatial resolution and vertical velocity</h2>
@@ -321,19 +352,20 @@
                 <img src="http://i.imgur.com/nfj1Yr7.jpg">
 
                 <ion-list>
-                    <ion-item>See more papers ...</ion-item>
+                    <a class="item item-icon-left" href="#"><i class="icon ion-ios-flask"></i>
+                    See more papers ...</a>
                 </ion-list>
 
                 <h3>Suggested Books</h3>
-                <ion-list>
+                <ion-list class="item-text-wrap">
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/rCt4dP8.jpg">
                         <h2>The Manic Sun: Weather Theories Confounded</h2>
-                        <p>Nigel Calder</p>
+                        <p>@NigelCalder</p>
                     </ion-item>
                 </ion-list>
 
-                <div>
+                <div><br>
                     <blockquote>The solar physicists cared just as much as the official climatologists, about keeping the world safe for their grandchildren.  <span style="background-color:yellow">They said it was rash to suppose that every possible variation in the Sun&#39;s output of light had been seen by the satellites in the course of a single solar cycle. The solar-terrestrial physicists, for their part, pleaded for consideration of other ways in which the Sun might affect the Earth via the solar wind -- auroras, that sort of thing</span>. They were awfully vague, though, about how it could happen. - p18</blockquote>
                 </div>
 
@@ -341,56 +373,62 @@
                     <blockquote>To achieve its remarkable projection of future temperatures, the report had to argue that the global warming of the twentieth century was largely due to carbon dioxide and other greenhouse gases. The role of the Sun had to be minimized.  The commentary concentrated entirely on changes in the output of radiant energy from the visible disk.  <span style="background-color:yellow">As for the invisible heliosphere that embraced the Earth in the solar wind, and might contain other possible ways of changing the climate, for Houghton&#39;s group it did not exist.</span>- p41-42</blockquote>
                 </div>
 
-                <ion-list>
+                <ion-list class="item-text-wrap">
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/hZVQSot.jpg">
                         <h2>A Vast Machine: Computer Models, Climate Data, and the Politics of Global Warming</h2>
-                        <p>Paul N Edwards</p>
+                        <p>@PaulNEdwards</p>
                     </ion-item>
                 </ion-list>
 
                 <img src="http://i.imgur.com/Rk0XbDJ.jpg">
 
-                <ion-list>
+                <ion-list class="item-text-wrap">
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/nxJ0IrE.jpg">
                         <h2>The Electric Universe</h2>
-                        <p>Wal Thornhill</p>
+                        <p>@WalThornhill</p>
                     </ion-item>
+
+                    <a class="item item-icon-left" href="#"><i class="icon ion-ios-book"></i>
+                    See more books ...</a>
                 </ion-list>
 
                 <h3>Audio &amp; Video</h3>
-                <ion-list>
+                <ion-list class="item-text-wrap">
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/uxDJeFz.jpg">
                         <h2>Our Changing Climate and the Variable Sun</h2>
-                        <p>Space News</p>
+                        <p>@SpaceNews</p>
                     </ion-item>
 
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/gLgOec8.jpg">
                         <h2>Electric Earth, Electric Weather</h2>
-                        <p>Bill Nichols</p>
+                        <p>@BillNichols</p>
                     </ion-item>
 
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/C7HcVLZ.jpg">
                         <h2>The Reality of Long Range Weather and Climate Forecasting</h2>
-                        <p>Piers Corbyn</p>
+                        <p>@PiersCorbyn</p>
                     </ion-item>
 
                     <ion-item class="item-thumbnail-left">
                         <img src="http://i.imgur.com/dpohs0T.jpg">
                         <h2>Our Variable Sun &amp; Climate Change</h2>
-                        <p>Bob Johnson</p>
+                        <p>@BobJohnson</p>
                     </ion-item>
 
-                    <ion-item>See more media ...</ion-item>
+                    <a class="item item-icon-left" href="#"><i class="icon ion-play"></i>
+                    See more media ...</a>
                 </ion-list>
+
+                <br><br><br>
             </ion-content>
 
             <ion-tabs class="tabs-stable tabs-icon-top">
-                <ion-tab title="Help" icon="null"></ion-tab>
+                <ion-tab title="Help" icon="ion-help"></ion-tab>
                     <ion-content padding="true" class="has-header"></ion-content>
                 </ion-tab>
 
