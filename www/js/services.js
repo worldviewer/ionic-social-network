@@ -50,10 +50,14 @@ angular.module('app.services', [])
                 mapperpic: "img/experts/chris-reeve.png",
             	title: "The Primitive Equations"
             },{
+            	image: "img/concept-maps/structure-of-science-small.jpg",
+            	nodes: [{alt:"", title:"", href:"#", shape:"rect", coords:""}],
             	mappername: "@ChrisReeve",
             	mapperpic: "img/experts/chris-reeve.png",
             	title: "Electric Joule Heating"
             },{
+            	image: "img/concept-maps/structure-of-science-small.jpg",
+            	nodes: [{alt:"", title:"", href:"#", shape:"rect", coords:""}],
             	mappername: "@JimJohnson",
             	mapperpic: "img/experts/jim-johnson.jpg"
 		    }]
