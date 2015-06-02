@@ -5,13 +5,13 @@ A mobile app that helps people to think like a scientist about current events.
 ## Defining the Problem of Modern Scientific Discourse
 
 <p align="center">
-  <a href="http://phdcomics.com/comics/archive_list.php"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/phd071003.gif" /></a>
+  <a href="http://phdcomics.com/comics/archive_list.php"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/phd071003.gif" /></a>
 </p>
 
 Our traditional system of lectures and problem sets imprints upon most university graduates today a "positivist" approach to scientific discourse and education, which positions scientific communications as a uni-directional flow of information from experts to laypeople.  Many professional scientists today come away from the graduate programs' intensive emphasis upon memorization with a worldview which is observably detrimental to the process of scientific investigation.  It tends to take the assumptions of models for granted, and essentially treats the models as reality.  From that perspective, the underlying motives of scientific researchers can observably shift from investigation towards eliciting a particular aligning belief within the minds of laypeople.  For many topics today which will not experience any significant revision over many centuries, this approach can actually create efficient problem solvers.
 
 <p align="center">
-  <a href="https://plus.google.com/108466508041843226480/posts/UBHrj2f3zKs"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/shmidt-whistleblower.jpg" /></a>
+  <a href="https://plus.google.com/108466508041843226480/posts/UBHrj2f3zKs"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/shmidt-whistleblower.jpg" /></a>
 </p>
 
 By sharp contrast, a number of universities have more contemporary physics education research (PER) programs today which emphasize a "constructivist" approach to science education and discourse.  In these programs, the focus is not so much upon truth, established science, memorization of exemplars, and conclusions; but rather upon the asking of good questions, the mapping out of debate, the resolution of scientific controversies, the quality of the conversation, adherence to scientific values, creative problem-solving and effective re-framing in the face of stubborn (aka "wicked") problems.  The underlying idea is that even though the philosophers are oftentimes correct that there is indeed one single truth, scientific investigators should nevertheless approach the more stubborn problems of science with a many-perspectives worldview.  This subtle distinction between philosophy of science and science education approaches has spilled much ink over the years, but it is truthfully not a complicated issue.
@@ -23,38 +23,38 @@ This decision lends some stability to scientific theory, which can be argued to 
 However, this approach comes with some costly side-effects -- namely that:
 
 <p align="center">
-  <a href="https://plus.google.com/108466508041843226480/posts/UBHrj2f3zKs"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/schmidt-on-paradigms.jpg" /></a>
+  <a href="https://plus.google.com/108466508041843226480/posts/UBHrj2f3zKs"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/schmidt-on-paradigms.jpg" /></a>
 </p>
 
 * Graduate students never actually learn of alternatives to their textbook theories which originate from alternative scientific frameworks, and this lack of awareness can severely affect their inferential skills.  There are numerous instances observable online today where academic researchers and graduate students are actually the last to know of certain scientific controversies.
 
 <p align="center">
-  <a href="http://www.amazon.com/Immunity-Change-Potential-Organization-Leadership/dp/1422117367"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/kegan-lahey-five-stages.png" /></a>
+  <a href="http://www.amazon.com/Immunity-Change-Potential-Organization-Leadership/dp/1422117367"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/kegan-lahey-five-stages.png" /></a>
 </p>
 
 * The focus upon problem-solving, to the detriment of a more concepts-first approach, undermines critical thinking insofar as it complicates an individual's ability to back out of an idea.  In order to question something, a person must be able to see the larger structure which contains it, *and to do so as they are learning it*.  In other words, they must be fluent in the larger sea of ideas which compete with it, which may even differ at the level of concepts and definitions.
 
 <p align="center">
-  <a href="http://www.wired.com/2011/10/stephenson-innovation-starvation/"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/stephenson-innovation-starvation.jpg" /></a>
+  <a href="http://www.wired.com/2011/10/stephenson-innovation-starvation/"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/stephenson-innovation-starvation.jpg" /></a>
 </p>
 
 * If there are any mistakes in this dominant scientific framework, then we should expect with a positivist approach that the entire community of scientists will collectively and righteously dismiss ideas which will may one day turn out to be recognized as superior to those currently taught.  Eventually, and predictably, these models will bear all of their lower-hanging fruit, and scientific discovery will then expensively derive more from tinkering and observation than from the theory itself.  This situation has been described by Neil Stephenson as <a href="http://www.wired.com/2011/10/stephenson-innovation-starvation/">"innovation starvation"</a>.
 
 <p align="center">
-  <a href="https://plus.google.com/108466508041843226480/posts/UBHrj2f3zKs"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/schmidt-on-critical-thinkers.jpg" /></a>
+  <a href="https://plus.google.com/108466508041843226480/posts/UBHrj2f3zKs"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/schmidt-on-critical-thinkers.jpg" /></a>
 </p>
 
 * It should not be assumed that students knowledgeable in the dominant framework are skilled in the tacit ability to re-frame on stubborn problems.  It seems apparent that re-framing is a widespread problem amongst academics and laypeople alike.  Amongst CEO's, it is a highly valued skill that can make the difference between success and failure of a company; the scientific endeavor is probably no different.  The re-framing skill does not simply emerge from memorization of exemplars; it more likely evolves as a consequence of making crucial, rational decisions in an environment where there are lots of competing ideas (like in the sort of challenging case studies that Harvard business graduates must endure).  The existing graduate programs do not appear to train this soft skill, which should be alarming to people when it comes to important controversies like climate change.
 
 <p align="center">
-  <a href="https://youtu.be/7_RrLKIWbBg?t=546"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/conspiracy-theorists.jpg" /></a><br>
+  <a href="https://youtu.be/7_RrLKIWbBg?t=546"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/conspiracy-theorists.jpg" /></a><br>
   (click to see an enlarged view)
 </p>
 
 * The dominant scientific framework's preference for certain sides of scientific controversies over others can create <a href="https://plus.google.com/+ChrisReeveOnlineScientificDiscourseIsBroken/posts/9MHHCUY38Cz">a special type of ignorance within even experts</a>.  These blind spots are not simply lacking in thought.  <a href="https://www.youtube.com/watch?v=MgQutgSwY88">Daniel Kahneman</a> has shown that the mind is really two systems -- a slow rational System 2, and a far faster emotion-based, pattern-matching system known as System 1 -- and that where System 2 creates ignorance, System 1 will flourish.  This complex sequence of events tends to occur most often today as a reaction to information overload.  This plainly suggests that academia's decision to ignore against-the-maintream ideas and certain sides of controversies leads them to have irrational thoughts about the other sides of those arguments.  This is a problem faced by everybody, as System 1 is responsible for keeping people alive.
 
 <p align="center">
-  <a href="https://plus.google.com/108466508041843226480/posts/cBgUMG6FCfS"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/kahneman-expert-bias.jpg" /></a>
+  <a href="https://plus.google.com/108466508041843226480/posts/cBgUMG6FCfS"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/kahneman-expert-bias.jpg" /></a>
 </p>
 
 * The refusal to fully and meaningfully engage both sides of scientific controversies creates what I like to call "innovation bottlenecks".  As a methodology, such an approach assumes that it knows the answer to a big question when in fact the community of scientists have collectively decided not to rationally engage the other side of the issue.  Such an approach can be expected to be extremely costly to society's future standard of living insofar as these controversies can be expected to basically block certain scientific discoveries.
@@ -64,7 +64,7 @@ However, this approach comes with some costly side-effects -- namely that:
 My name is Chris Reeve and I've spent a decade closely following the issues faced by a group of scientific theorists who have been engaged in a bitter dispute for more than half a century.  The two sides of this debate publish in two different scientific journals -- the _Astrophysical Journal_ and IEEE's _Transactions on Plasma Science_.  I've used this highly complex debate over how to model the universe's fundamental state for matter, *plasma*, as a prototypical controversy to design a solution.  My approach contrasts sharply with <a href="https://plus.google.com/+ChrisReeveOnlineScientificDiscourseIsBroken/posts/ZyWHQxTUk53">Google's approach for their truth engine</a>, where they test their system with the debate over Obama's birth certificate.
 
 <p align="center">
-  <a href="http://arxiv.org/abs/1502.03519"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/google-truth-engine-obama.jpg" /></a>
+  <a href="http://arxiv.org/abs/1502.03519"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/google-truth-engine-obama.jpg" /></a>
 </p>
 
 The design of the Worldviewer app below is based upon this decade of observation, and about four years of contemplating a design.  I consider this app to be a prototype, and I hope to use it to advance my design to the next stage: A graphical interface on both the mobile and desktop platforms.
@@ -72,7 +72,7 @@ The design of the Worldviewer app below is based upon this decade of observation
 ## The MVP (Minimum Viable Product)
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/swipe-diagram.jpg" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/swipe-diagram.jpg" />
 </p>
 
 ### Separated, But Weakly-Interacting, Levels of Scientific Discourse
@@ -110,7 +110,7 @@ One more swipe up takes the person to the **model view**, which by contrast is f
 Yet another swipe up takes them to the **clash of worldviews** over the article's claims/observations, from competing worldviews.  Both convergence and divergence are visible from this level, insofar as the nodes can branch off to questions or models.  There is a search feature at this level which specifically searches on scientific controversies.  Each controversy is represented by a tag, and can encompass numerous nodes.
 
 <p align="center">
-  <a href="https://plus.google.com/108466508041843226480/posts/Q12YRp5rwFP"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/kahneman-two-systems-of-the-mind.jpg" /></a>
+  <a href="https://plus.google.com/108466508041843226480/posts/Q12YRp5rwFP"><img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/kahneman-two-systems-of-the-mind.jpg" /></a>
 </p>
 
 Swiping down from the original article takes the user to the **believable narratives**, aka "associative coherence".  This would logically place this lower-level system of pattern-matching beneath System 2, and the article would symbolically rest between these two systems of the mind.  A search box brings up particular instances of associative coherence.
@@ -206,7 +206,7 @@ Adam did a Google search on "electric joule heating", and there weren't a lot of
 Adam goes to http://thepeer.reviews and he sees the following screen:
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/ionic-creator-homepage.jpg" />
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/ionic-creator-homepage.jpg" />
 </p>
 
 He enters "electric joule heating" and clicks on the third link for search.  The page changes to a profile of the concept.  This second page is sort of reminiscent of other social networking interfaces which portray people, except that it's about a scientific model.
@@ -282,14 +282,14 @@ Same basic interface as mobile ...
 
 + A prominent link to a 2nd page which includes my Udemy course on "How to Think Like a Scientist", which explains the theory behind the app, and goes through examples.
 
-* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/01-gplus-hannes-alfven-bio.jpg">Start strong with Alfven's story</a>
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/gplus-graphics/01-gplus-hannes-alfven-bio.jpg">Start strong with Alfven's story</a>
 
 >    "What makes science perplexing is that the observations do not arrive in 
 >    an order which facilitates sensemaking.  Thus, part of the riddle of 
 >    science is overcoming the momentum of prior, foggy ideas sufficient to 
 >    see nature as it truly is."
 
-* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/02-gplus-subtropical-arctic.jpg">Subtropical Arctic</a>
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/gplus-graphics/02-gplus-subtropical-arctic.jpg">Subtropical Arctic</a>
 
 >    "We live in a newfound age of information overload, but we've so far 
 >    failed to meaningfully engage the contradictions of modern science.  We 
@@ -297,20 +297,20 @@ Same basic interface as mobile ...
 >    that psychological goal." (show quote on contradiction between trees and 
 >    eocene subtropical)
 
-* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/03-gplus-venus.jpg">Venus' heat</a>
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/gplus-graphics/03-gplus-venus.jpg">Venus' heat</a>
 
 >    "Many claims we today take for granted are truthfully based on nothing 
 >    but assumptions, and the force-fitting of observations to scientific 
 >    theory."
 
-* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/04-gplus-radio-waves.jpg">Radio waves from space</a>
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/gplus-graphics/04-gplus-radio-waves.jpg">Radio waves from space</a>
 
 >    "History of science is clear that the experts are frequently wrong.  When 
 >    radio waves were first observed by radio engineers coming from space, 
 >    astronomers could not dream up any rational way by which the radio waves 
 >    could be generated, so they assumed it was either a mistake or a hoax."
 
-* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/05-gplus-laser.jpg">Laser</a>
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/gplus-graphics/05-gplus-laser.jpg">Laser</a>
 
 >    "When the laser's precursor, the maser, was invented, the leading 
 >    scientific theorists of the day told its inventor that it was 
@@ -318,20 +318,20 @@ Same basic interface as mobile ...
 >    obscure aspects of physics; they came from the marrow of these men's 
 >    bones."
 
-* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/06-gplus-firestone.jpg">Firestone</a>
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/gplus-graphics/06-gplus-firestone.jpg">Firestone</a>
 
 >    "Many important scientific observations today go unnoticed for the simple 
 >    reason that they deviate from the narrative we've been taught." (half a 
 >    million mammoth caracasses quote + radioactive black mat + pics of 
 >    meteorites embedded within tusks)
 
-* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/07-gplus-uniformitarianism.jpg">Petroglyphs</a>
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/gplus-graphics/07-gplus-uniformitarianism.jpg">Petroglyphs</a>
 
 >    "There are entire scientific disciplines which are blocked from public 
 >    awareness because they are based upon a concept which the public does not 
 >    understand."
 
-* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/gplus-graphics/08-the-cosmic-web.jpg">Plasma fractal</a>
+* <a href="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/gplus-graphics/08-the-cosmic-web.jpg">Plasma fractal</a>
 
 >    "Consider this unexpected fact: The fourth state of matter, plasma, can 
 >    naturally form complex electrical structures like wires and hubs.  What 
