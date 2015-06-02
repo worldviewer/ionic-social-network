@@ -112,8 +112,7 @@
                 <div>
                     <p><strong>{{construct.shortDefinition}}</strong></p>
 
-                    <p>Conventional theory models this flow of charged particles fundamentally as a fluid, but these models have been in dispute since their inception. One alternative hypothesis likens these moving charges to an electric current. Advocates point to the fact that the solar wind is oftentimes guided by planetary magnetic fields into the poles, and the presence of hot spots at these poles for a number of planets within our solar system is suggestive of the idea that
-                        this flow of charged particles can heat up the planets it is guided into.</p>
+                    <p>{{construct.longDefinition}}</p>
 
                     <ion-list>
 
@@ -124,41 +123,21 @@
 
                 <h3>Status</h3>
                 <div>
-                    <p>Electric joule heating is not widely known, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Electric joule heating is a natural implication of the Electric Universe paradigm.</p>
+                    <p>{{construct.status}}</p>
                 </div>
 
                 <h3>Advocates / Experts</h3>
                 <div>
                     <ion-list class="item-text-wrap">
-                        <ion-item class="item-thumbnail-left" href="#">
-                            <img src="http://i.imgur.com/yD6vBRp.jpg">
-                            <h2>@ChrisReeve</h2>
-                            <p>Layperson Advocate</p>
-                        </ion-item>
 
-                        <ion-item class="item-thumbnail-left" href="#">
-                            <img src="http://i.imgur.com/mbeC3Je.jpg">
-                            <h2>@BillNichols</h2>
-                            <p>Atmospheric Scientist</p>
-                        </ion-item>
-
-                        <ion-item class="item-thumbnail-left" href="#">
-                            <img src="http://i.imgur.com/24TB0Nr.jpg">
-                            <h2>@BenDavidson</h2>
-                            <p>Theorist, SuspiciousObservers</p>
-                        </ion-item>
-
-                        <ion-item class="item-thumbnail-left" href="#">
-                            <img src="http://i.imgur.com/ItIx0mW.jpg">
-                            <h2>@PiersCorbyn</h2>
-                            <p>Theorist, WeatherAction</p>
-                        </ion-item>
-
-                        <ion-item class="item-thumbnail-left" href="#">
-                            <img src="http://i.imgur.com/qLix13K.jpg">
-                            <h2>@BobJohnson</h2>
-                            <p>Independent Plasma Theorist</p>
-                        </ion-item>
+                        <div ng-repeat="expert in construct.experts">
+                            <ion-item class="item-thumbnail-left"
+                                href="#">
+                                <img ng-src="{{expert.image}}">
+                                <h2>{{expert.name}}</h2>
+                                <p>{{expert.title}}</p>
+                            </ion-item>
+                        </div>
 
                         <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-university"></i>
                         See more experts ...</a>
@@ -168,15 +147,20 @@
                 <h3>Critiques</h3>
                 <div>
                     <ion-list class="item-text-wrap">
-                        <ion-item class="item-thumbnail-left" href="#">
-                            <img src="http://i.imgur.com/M4upuKt.jpg">
-                            <h2>@LeifSvalgaard</h2>
-                            <p>WUWT&#39;s Resident Solar Expert</p>
-                        </ion-item>
 
-                        <a href="#">
-                            <img src="http://i.imgur.com/qdM6YqC.jpg">
-                        </a>
+                        <div ng-repeat="critique in construct.critiques">
+                            <ion-item class="item-thumbnail-left" href="#">
+                                <img ng-src="{{critique.critic.image}}">
+                                <h2>{{critique.critic.name}}</h2>
+                                <p>{{critique.critic.title}}</p>
+                            </ion-item>
+
+                            <div ng-repeat="pic in critique.pics">
+                                <a href="{{pic.url}}">
+                                    <img ng-src="{{pic.image}}">
+                                </a>
+                            </div>
+                        </div>
 
                         <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-android-warning"></i>
                         See more critiques ...</a>
@@ -185,18 +169,12 @@
 
                 <h3>Key Concepts</h3>
                 <div>
-                    <img src="http://i.imgur.com/y1gsktM.jpg" usemap="#CMap">
+                    <img src="{{construct.cmaps[0].image}}" usemap="#CMap">
 
-                    <map name="CMap" id="CMap">
-                        <area alt="" title="" href="#" shape="rect" coords="31,13,91,52" />
-                        <area alt="" title="" href="#" shape="rect" coords="162,10,225,48" />
-                        <area alt="" title="" href="#" shape="rect" coords="238,71,300,98" />
-                        <area alt="" title="" href="#" shape="rect" coords="105,118,148,156" />
-                        <area alt="" title="" href="#" shape="rect" coords="190,143,246,180" />
-                        <area alt="" title="" href="#" shape="rect" coords="188,240,249,276" />
-                        <area alt="" title="" href="#" shape="rect" coords="96,245,158,274" />
-                        <area alt="" title="" href="#" shape="rect" coords="7,125,54,153" />
-                        <area alt="" title="" href="#" shape="rect" coords="3,221,58,277" />
+                    <map name='CMap' id='CMap'>
+                        <div ng-repeat="node in construct.cmaps[0].nodes">
+                            <area alt="{{node.alt}}" title="{{node.title}}" href="{{node.href}}" shape="{{node.rect}}" coords="{{node.coords}}" />
+                        </div>
                     </map>
 
                     <h3>Other Concept Maps</h3>
