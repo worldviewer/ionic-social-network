@@ -37,6 +37,7 @@ angular.module('app.services', [])
             }],
             cmaps: [{
             	image: "img/concept-maps/electric-joule-heating-cmap-small.jpg",
+
             	nodes: [{alt:"", title:"", href:"#", shape:"rect", coords:"31,13,91,52"},
                         {alt:"", title:"", href:"#", shape:"rect", coords:"162,10,225,48"},
                         {alt:"", title:"", href:"#", shape:"rect", coords:"238,71,300,98"},
@@ -46,21 +47,77 @@ angular.module('app.services', [])
                         {alt:"", title:"", href:"#", shape:"rect", coords:"96,245,158,274"},
                         {alt:"", title:"", href:"#", shape:"rect", coords:"7,125,54,153"},
                         {alt:"", title:"", href:"#", shape:"rect", coords:"3,221,58,277"}],
+
                 mappername: "@ChrisReeve",
                 mapperpic: "img/experts/chris-reeve.png",
-            	title: "The Primitive Equations"
+            	title: "The Primitive Equations",
+                display: true
+
             },{
             	image: "img/concept-maps/structure-of-science-small.jpg",
             	nodes: [{alt:"", title:"", href:"#", shape:"rect", coords:""}],
             	mappername: "@ChrisReeve",
             	mapperpic: "img/experts/chris-reeve.png",
-            	title: "Electric Joule Heating"
+            	title: "Electric Joule Heating",
+                display: false
+
             },{
             	image: "img/concept-maps/structure-of-science-small.jpg",
             	nodes: [{alt:"", title:"", href:"#", shape:"rect", coords:""}],
-            	mappername: "@JimJohnson",
-            	mapperpic: "img/experts/jim-johnson.jpg"
-		    }]
+            	mappername: "@ChrisReeve",
+            	mapperpic: "img/experts/chris-reeve.png",
+                title: "Plasma",
+                display: false
+		    }],
+
+            infographics: [{
+                title: "There's a Mistake in the Climate Models and It's Called Electric Joule Heating",
+                url: "https://plus.google.com/108466508041843226480/posts/GfRTMJDtUZU",
+                image: "img/infographics/electric-joule-heating-small.jpg",
+                display: true
+
+            }, {
+                title: "The Greenhouse Effect Was Not Observed on Venus by the Pioneer Venus Mission; It Was Assumed",
+                url: "https://plus.google.com/108466508041843226480/posts/hKf2QRETTAy",
+                image: "img/infographics/venus-heat-small.jpg",
+                display: true
+
+            }, {
+                title: "A Mythologist Tells the Story that Scientists Refuse to Teach in University Physics",
+                url: "https://plus.google.com/108466508041843226480/posts/YoTuHGL16ur",
+                image: "img/infographics/hannes-alfven-bio-small.jpg",
+                display: true
+            }],
+
+            articles: [{
+                title: "Solar Wind Surprise",
+                authors: ["@StuartWolpert", "@AnthonyWatts"],
+                sourcename: "Wattsupwiththat Blog",
+                image: "/img/articles/solar-wind-surprise.png",
+                url: "http://wattsupwiththat.com/2009/09/10/solar-wind-suprise-this-discovery-is-like-finding-it-got-hotter-when-the-sun-went-down/",
+                text: [""],
+                images: ["img/articles/wuwt-01-energy-transfer.jpg",
+                    "img/articles/wuwt-02-major-surprise.jpg",
+                    "img/articles/wuwt-03-energy-variations.jpg"]
+
+            }, {
+                title: "Global Warming in a Climate of Ignorance",
+                authors: ["@WalThornhill"],
+                sourcename: "Holoscience",
+                image: "",
+                url: "http://www.holoscience.com/wp/global-warming-in-a-climate-of-ignorance/",
+                text: [""],
+                images: ["img/articles/sun-power-surge.jpg"]
+
+            }, {
+                title: "Science, Politics and Global Warming",
+                authors: ["@WalThornhill"],
+                sourcename: "Holoscience",
+                image: "img/articles/sun-power-surge.jpg",
+                url: "http://www.holoscience.com/wp/science-politics-and-global-warming/",
+                text: [""],
+                images: ["img/articles/thornhill-on-climatologists-1.jpg", "img/articles/thornhill-on-climatologists-2.jpg"]
+            }]
 
         }];
 

@@ -174,34 +174,28 @@
 
                 <h3>Key Concepts</h3>
                 <div>
-                    <img src="{{construct.cmaps[0].image}}" usemap="#CMap">
 
-                    <map name='CMap' id='CMap'>
-                        <div ng-repeat="node in construct.cmaps[0].nodes">
-                            <area alt="{{node.alt}}" title="{{node.title}}" href="{{node.href}}" shape="{{node.rect}}" coords="{{node.coords}}" />
-                        </div>
-                    </map>
+                    <div ng-repeat="cmap in construct.cmaps | filter:!cmap.display">
+                        <img ng-src="{{cmap.image}}" usemap="#CMap">
 
-                    <h3>Other Concept Maps</h3>
+                        <map name='CMap' id='CMap'>
+                            <div ng-repeat="node in cmap.nodes">
+                                <area alt="{{node.alt}}" title="{{node.title}}" href="{{node.href}}" shape="{{node.rect}}" coords="{{node.coords}}" />
+                            </div>
+                        </map>
+                    </div>
+
+                    <h3>Explore All Concept Maps</h3>
 
                     <ion-list class="item-text-wrap">
-                        <ion-item class="item-thumbnail-left" href="#">
-                            <img src="http://i.imgur.com/yD6vBRp.jpg">
-                            <h2>Electric Joule Heating</h2>
-                            <p>@ChrisReeve</p>
-                        </ion-item>
 
-                        <ion-item class="item-thumbnail-left" href="#">
-                            <img src="http://i.imgur.com/kpVQ1R0.jpg">
-                            <h2>Cosmic Plasma Modeling</h2>
-                            <p>@JimJohnson</p>
-                        </ion-item>
-
-                        <ion-item class="item-thumbnail-left" href="#">
-                            <img src="http://i.imgur.com/poku6Ud.jpg">
-                            <h2>The Electric Universe</h2>
-                            <p>@WalThornhill</p>
-                        </ion-item>
+                        <div ng-repeat="cmap in construct.cmaps">
+                            <ion-item class="item-thumbnail-left" href="#">
+                                <img ng-src="{{cmap.mapperpic}}">
+                                <h2>{{cmap.title}}</h2>
+                                <p>{{cmap.mappername}}</p>
+                            </ion-item>
+                        </div>
 
                         <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-network"></i>
                         See more concept maps ...</a>
@@ -209,15 +203,14 @@
                 </div>
 
                 <h3>Infographics</h3>
-                <img src="http://i.imgur.com/ws4MupK.jpg">
 
-                <div class="spacer" style="width: 300px; height: 25px;"></div>
+                <div ng-repeat="infographic in construct.infographics | filter:infographic.display">
 
-                <img src="http://i.imgur.com/NozG4mC.jpg">
+                    <h4>{{infographic.title}}</h4>
+                    <a href="{{infographic.url}}"><img ng-src="{{infographic.image}}"></a>
 
-                <div class="spacer" style="width: 300px; height: 25px;"></div>
-
-                <img src="http://i.imgur.com/FPFLUTS.jpg">
+                    <div class="spacer" style="width: 300px; height: 10px;"></div>
+                </div>
 
                 <ion-list>
                     <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-android-list"></i>
