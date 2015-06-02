@@ -1,1 +1,5 @@
 /* Empty. Add your own CSS if you like */
+
+.list .item-complex .item-content {
+	background-color: aliceblue;
+}
