@@ -120,7 +120,7 @@ Swiping down yet further takes them to **other similar articles** -- a mix of re
 *The core of this idea is to induce people to visualize the inherent structure of science within their heads* -- an idea which sources from physics education researcher <a href="https://www.narst.org/publications/research/Metacogn.cfm">Bob Gowan</a>.  Direct shortcuts to these epistemological layers will not be provided, in order to ensure that this hierarchy is imprinted upon the user's memory; what will be provided is ready access to the diagram, which users can use to facilitate cognitively visualizing the app's navigation.
 
 <p align="center">
-  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/structure-of-science-small.jpg" /></a>
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/structure-of-science.jpg" /></a>
 </p>
 
 The interface will enforce as a matter of habit these different aspects of *thinking like a scientist*.  Most importantly, by observing the relationship of the article or paper to the content in each of these levels, the users will learn what a **worldview** is.  This failure to understand what a scientific worldview is is a very serious problem that has plagued modern scientific discourse.
