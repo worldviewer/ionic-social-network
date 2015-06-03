@@ -109,10 +109,23 @@
             <ion-content padding="true" class="has-header">
 
                 <h3>{{construct.name}}</h3>
+
                 <div>
                     <p><strong>{{construct.shortDefinition}}</strong></p>
 
-                    <p>{{construct.longDefinition}}</p>
+                    <div ng-show="construct.headerimages" ng-repeat="headerimage in construct.headerimages">
+                        <img ng-src="{{headerimage}}">
+                    </div>
+
+                    <h4>Key Claims</h4>
+                    <ion-list class="item-text-wrap">
+                        <div ng-repeat="point in construct.longDefinition">
+                            <ion-item class="item item-icon-right">
+                                <p>{{point}}</p>
+                                <i class="icon ion-chevron-right"></i>
+                            </ion-item>
+                        </div>
+                    </ion-list>
 
                     <ion-list>
 
@@ -155,16 +168,36 @@
                     <ion-list class="item-text-wrap">
 
                         <div ng-repeat="critique in construct.critiques">
+
                             <ion-item class="item-thumbnail-left" href="#">
                                 <img ng-src="{{critique.critic.image}}">
                                 <h2>{{critique.critic.name}}</h2>
                                 <p>{{critique.critic.title}}</p>
                             </ion-item>
 
-                            <div ng-repeat="pic in critique.pics">
+                            <div ng-show="critique.pics" ng-repeat="pic in critique.pics">
                                 <a href="{{pic.url}}">
                                     <img ng-src="{{pic.image}}">
                                 </a>
+                            </div>
+
+                            <!-- Note usage of ng-bind-html, which is used
+                                 with the sanitize .filter service -->
+
+                            <div ng-show="critique.text" ng-repeat="paragraph in critique.text">
+                                <blockquote>
+                                    <div ng-bind-html="paragraph | sanitize">
+                                </blockquote>
+                            </div>
+
+                            <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-loop"></i>
+                            Click for rebuttal ...</a>
+
+                            <div ng-show="critique.postscript" class="row">
+                                <div class="col-10">
+                                    <i class="icon ion-asterisk"></i>
+                                </div>
+                                <div class="col-90" ng-bind-html="critique.postscript | sanitize"></div>
                             </div>
                         </div>
 
@@ -184,13 +217,22 @@
                 <div>
 
                     <div ng-repeat="cmap in construct.cmaps | filter:!cmap.display">
+
                         <img ng-src="{{cmap.image}}" usemap="#CMap">
 
                         <map name='CMap' id='CMap'>
-                            <div ng-repeat="node in cmap.nodes">
+                            <div ng-show="cmap.nodes" ng-repeat="node in cmap.nodes">
                                 <area alt="{{node.alt}}" title="{{node.title}}" href="{{node.href}}" shape="{{node.rect}}" coords="{{node.coords}}" />
                             </div>
                         </map>
+
+                        <div ng-show="cmap.postscript" class="row">
+                            <div class="col-10">
+                                <i class="icon ion-asterisk"></i>
+                            </div>
+                            <div class="col-90" ng-bind-html="cmap.postscript | sanitize"></div>
+                        </div>
+
                     </div>
 
                     <h3>Explore All Concept Maps</h3>
@@ -222,6 +264,13 @@
                     <div class="spacer" style="width: 300px; height: 10px;"></div>
                 </div>
 
+                <div ng-show="infographic.postscript" class="row">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90" ng-bind-html="infographic.postscript | sanitize"></div>
+                </div>
+
                 <ion-list>
                     <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-android-list"></i>
                     See more infographics ...</a>
@@ -245,10 +294,27 @@
                             <p>{{article.sourcename}}</p>
                         </ion-item>
                     </ion-list>
-      
-                    <div ng-repeat="image in article.images">
+
+                    <div ng-show="article.images" ng-repeat="image in article.images">
                         <a href="{{url}}"><img ng-src="{{image}}"></a>
                     </div>
+
+                    <!-- Note usage of ng-bind-html, which is used
+                         with the sanitize .filter service -->
+
+                    <div ng-show="article.text" ng-repeat="paragraph in article.text">
+                        <blockquote>
+                            <div ng-bind-html="paragraph | sanitize">
+                        </blockquote>
+                    </div>
+
+                    <div ng-show="article.postscript" class="row">
+                        <div class="col-10">
+                            <i class="icon ion-asterisk"></i>
+                        </div>
+                        <div class="col-90" ng-bind-html="article.postscript | sanitize"></div>
+                    </div>
+
 
                 </div>
   
@@ -266,8 +332,15 @@
                         <ion-item class="item-thumbnail-left" href="{{forum.url}}">
                             <img ng-src="{{forum.image}}">
                             <h2>{{forum.sourcename}}</h2>
-                            <p>{{forum.note}}</p>
                         </ion-item>
+
+                        <div ng-show="forum.postscript" class="row">
+                            <div class="col-10">
+                                <i class="icon ion-asterisk"></i>
+                            </div>
+                            <div class="col-90" ng-bind-html="forum.postscript | sanitize"></div>
+                        </div>
+
                     </div>
 
                     <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-chatboxes"></i>
@@ -286,12 +359,31 @@
                             <h2>{{paper.title}}</h2>
                             <p>{{paper.journal}}, {{paper.year}}</p>
                         </ion-item>
+                        <br>
 
                     </ion-list>
 
-                    <div ng-repeat="image in paper.images">
+
+                    <!-- Note usage of ng-bind-html, which is used
+                         with the sanitize .filter service -->
+
+                    <div ng-show="paper.text" ng-repeat="paragraph in paper.text">
+                        <blockquote>
+                            <div ng-bind-html="paragraph | sanitize">
+                        </blockquote>
+                    </div>
+
+                    <div ng-show="paper.images" ng-repeat="image in paper.images">
                         <img ng-src="{{image}}">
                     </div>
+
+                    <div ng-show="paper.postscript" class="row">
+                        <div class="col-10">
+                            <i class="icon ion-asterisk"></i>
+                        </div>
+                        <div class="col-90" ng-bind-html="paper.postscript | sanitize"></div>
+                    </div>
+
                 </div>
 
                 <ion-list>
@@ -327,6 +419,13 @@
                         <img ng-src="{{image}}">
                     </div>
 
+                    <div ng-show="book.postscript" class="row">
+                        <div class="col-10">
+                            <i class="icon ion-asterisk"></i>
+                        </div>
+                        <div class="col-90" ng-bind-html="book.postscript | sanitize"></div>
+                    </div>
+
                 </div>
 
                 <ion-list>
@@ -345,6 +444,14 @@
                             <h2>{{resource.title}}</h2>
                             <p>{{resource.author}}</p>
                         </ion-item>
+
+                        <div ng-show="resource.postscript" class="row">
+                            <div class="col-10">
+                                <i class="icon ion-asterisk"></i>
+                            </div>
+                            <div class="col-90" ng-bind-html="resource.postscript | sanitize"></div>
+                        </div>
+
                     </div>
 
                     <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-play"></i>
