@@ -30,19 +30,33 @@
         // Each state's controller can be found in controllers.js
         $stateProvider
         
-        .state('homepage', {
+        // .state('homepage', {
+        //     url: '/',
+        //     templateUrl: 'homepage.html'
+        // })
+        
+        // .state('template', {
+        //     url: '/tabs',
+        //     templateUrl: 'template.html'
+        // })
+
+        .state('search', {
+            abstract: true,
+            url: '/search',
+            templateUrl: 'index.html',
+            controller: 'ConstructCtrl'
+        })
+        
+        .state('search.homepage', {
             url: '/',
-            templateUrl: 'homepage.html'
+   	        templateUrl: 'homepage.html',
+   	        controller: 'ConstructCtrl'
         })
-        
-        .state('template', {
-            url: '/tabs',
-            templateUrl: 'template.html'
-        })
-        
-        .state('construct', {
+
+        .state('search.constructs', {
             url: '/constructs',
-            templateUrl: 'constructs.html'
+   	        templateUrl: 'search.constructs.html',
+   	        controller: 'ConstructCtrl'
         })
 
         .state('infographic', {
@@ -64,4 +78,8 @@
                 $scope.none = "No such construct exists";
             }
         })
-    }]);
+    }])
+
+    .controller('MainCtrl', function($state) {
+    	$state.transitionTo('search.constructs');
+    })

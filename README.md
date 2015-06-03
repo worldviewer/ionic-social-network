@@ -123,6 +123,8 @@ Swiping down yet further takes them to **other similar articles** -- a mix of re
   <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/structure-of-science.jpg" /></a>
 </p>
 
+It's become apparent through years of interactions with people online about scientific controversies that this structure to scientific theory is widely misunderstood by both laypeople and scientists alike.  The clue which gives it away is that although most people *do* have some understanding of what concepts, propositions and models are, very few people understand what a worldview is, or the role of worldviews in shaping focus questions.  This failure to understand that there are competing worldviews within the sciences exhibits an enormous effect upon the rate of innovation within the sciences, as it shapes the way we communicate science.
+
 The interface will enforce as a matter of habit these different aspects of *thinking like a scientist*.  Most importantly, by observing the relationship of the article or paper to the content in each of these levels, the users will learn what a **worldview** is.  This failure to understand what a scientific worldview is is a very serious problem that has plagued modern scientific discourse.
 
 Beyond that, this seems to me an excellent way to break up the various ways we can talk about some resource into their unique spaces, insofar as it creates a separation of concerns for scientific discourse which nevertheless weakly interact.  Later, as I become more knowledgeable about graphics, I can stick with this infrastructure, and simply upgrade the pages, one at a time.

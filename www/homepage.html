@@ -1,0 +1,41 @@
+<ion-view title="ThePeer.Reviews">
+    <ion-content padding="true" class="has-header">
+
+        <form ng-submit="analyzeURL()">
+
+            <label class="item item-input" name="analyze">
+                <span class="input-label">Analyze</span>
+                <input type="text" placeholder="URL">
+            </label>
+
+            <button class="button button-calm button-block">Analyze Scientific Content</button>
+        </form>
+
+        <div class="spacer" style="width: 300px; height: 28px;"></div>
+
+        <form ng-submit="askQuestion()">
+
+            <label class="item item-input" name="question">
+                <span class="input-label">Ask</span>
+                <input type="text" placeholder="Question">
+            </label>
+
+            <button class="button button-calm button-block">Ask a Scientific Question</button>
+        </form>
+
+        <div class="spacer" style="width: 300px; height: 23px;"></div>
+
+        <form ng-submit="searchConstruct()">
+
+            <label class="item item-input">
+                <span class="input-label">Search</span>
+                <input type="text" placeholder="Concept/Model/Worldview">
+            </label>
+        </form>
+
+        <button class="button button-calm button-block">Search</button>
+        <div class="spacer" style="width: 300px; height: 25px;"></div>
+        <button class="button button-calm button-block">Browse Controversies</button>
+
+    </ion-content>
+</ion-view>

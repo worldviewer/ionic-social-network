@@ -1,0 +1,358 @@
+<ion-view title="{{construct.type}}: {{construct.name}}" ng-controller="ConstructCtrl">
+
+    <ion-content padding="true" class="has-header">
+
+        <h3>{{construct.name}}</h3>
+
+        <div>
+            <p><strong>{{construct.shortDefinition}}</strong></p>
+
+            <div ng-show="construct.headerimages" ng-repeat="headerimage in construct.headerimages">
+                <img ng-src="{{headerimage}}">
+            </div>
+
+            <h4>Key Claims</h4>
+            <ion-list class="item-text-wrap">
+                <div ng-repeat="point in construct.longDefinition">
+                    <ion-item class="item item-icon-right">
+                        <p>{{point}}</p>
+                        <i class="icon ion-chevron-right"></i>
+                    </ion-item>
+                </div>
+            </ion-list>
+
+            <ion-list>
+
+                <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-quote"></i>
+                See more claims ...</a>
+            </ion-list>
+        </div>
+
+
+
+        <h3>Status</h3>
+        <div>
+            <p>{{construct.status}}</p>
+        </div>
+
+
+
+        <h3>Advocates / Experts</h3>
+        <div>
+            <ion-list class="item-text-wrap">
+
+                <div ng-repeat="expert in construct.experts">
+                    <ion-item class="item-thumbnail-left"
+                        href="#">
+                        <img ng-src="{{expert.image}}">
+                        <h2>{{expert.name}}</h2>
+                        <p>{{expert.title}}</p>
+                    </ion-item>
+                </div>
+
+                <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-university"></i>
+                See more experts ...</a>
+            </ion-list>
+        </div>
+
+
+
+        <h3>Critiques</h3>
+        <div>
+            <ion-list class="item-text-wrap">
+
+                <div ng-repeat="critique in construct.critiques">
+
+                    <ion-item class="item-thumbnail-left" href="#">
+                        <img ng-src="{{critique.critic.image}}">
+                        <h2>{{critique.critic.name}}</h2>
+                        <p>{{critique.critic.title}}</p>
+                    </ion-item>
+
+                    <div ng-show="critique.pics" ng-repeat="pic in critique.pics">
+                        <a href="{{pic.url}}">
+                            <img ng-src="{{pic.image}}">
+                        </a>
+                    </div>
+
+                    <!-- Note usage of ng-bind-html, which is used
+                         with the sanitize .filter service -->
+
+                    <div ng-show="critique.text" ng-repeat="paragraph in critique.text">
+                        <blockquote>
+                            <div ng-bind-html="paragraph | sanitize">
+                        </blockquote>
+                    </div>
+
+                    <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-loop"></i>
+                    Click for rebuttal ...</a>
+
+                    <div ng-show="critique.postscript" class="row">
+                        <div class="col-10">
+                            <i class="icon ion-asterisk"></i>
+                        </div>
+                        <div class="col-90" ng-bind-html="critique.postscript | sanitize"></div>
+                    </div>
+                </div>
+
+                <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-android-warning"></i>
+                See more critiques ...</a>
+            </ion-list>
+        </div>
+
+<!--            Note for future reference that post-MVP should handle
+        the scaling of images, as explained at:
+
+        http://stackoverflow.com/questions/21000338/angular-js-data-bind-background-images-using-media-queries -->
+
+
+
+        <h3>Key Concepts</h3>
+        <div>
+
+            <div ng-repeat="cmap in construct.cmaps | filter:!cmap.display">
+
+                <img ng-src="{{cmap.image}}" usemap="#CMap">
+
+                <map name='CMap' id='CMap'>
+                    <div ng-show="cmap.nodes" ng-repeat="node in cmap.nodes">
+                        <area alt="{{node.alt}}" title="{{node.title}}" href="{{node.href}}" shape="{{node.rect}}" coords="{{node.coords}}" />
+                    </div>
+                </map>
+
+                <div ng-show="cmap.postscript" class="row">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90" ng-bind-html="cmap.postscript | sanitize"></div>
+                </div>
+
+            </div>
+
+            <h3>Explore All Concept Maps</h3>
+
+            <ion-list class="item-text-wrap">
+
+                <div ng-repeat="cmap in construct.cmaps">
+                    <ion-item class="item-thumbnail-left" href="#">
+                        <img ng-src="{{cmap.mapperpic}}">
+                        <h2>{{cmap.title}}</h2>
+                        <p>{{cmap.mappername}}</p>
+                    </ion-item>
+                </div>
+
+                <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-network"></i>
+                See more concept maps ...</a>
+            </ion-list>
+        </div>
+
+
+
+        <h3>Infographics</h3>
+
+        <div ng-repeat="infographic in construct.infographics | filter:infographic.display">
+
+            <h4>{{infographic.title}}</h4>
+            <a href="{{infographic.url}}"><img ng-src="{{infographic.image}}"></a>
+
+            <div class="spacer" style="width: 300px; height: 10px;"></div>
+        </div>
+
+        <div ng-show="infographic.postscript" class="row">
+            <div class="col-10">
+                <i class="icon ion-asterisk"></i>
+            </div>
+            <div class="col-90" ng-bind-html="infographic.postscript | sanitize"></div>
+        </div>
+
+        <ion-list>
+            <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-android-list"></i>
+            See more infographics ...</a>
+        </ion-list>
+
+
+
+        <h3>Popular Science Articles</h3>
+
+        <div ng-repeat="article in construct.articles">
+
+            <ion-list class="item-text-wrap">
+                <ion-item class="item-thumbnail-left" href="#">
+                    <img ng-src="{{article.image}}">
+                    <h2>{{article.title}}</h2>
+
+                    <div ng-repeat="author in article.authors">
+                        <p>{{author}}</p>
+                    </div>
+
+                    <p>{{article.sourcename}}</p>
+                </ion-item>
+            </ion-list>
+
+            <div ng-show="article.images" ng-repeat="image in article.images">
+                <a href="{{url}}"><img ng-src="{{image}}"></a>
+            </div>
+
+            <!-- Note usage of ng-bind-html, which is used
+                 with the sanitize .filter service -->
+
+            <div ng-show="article.text" ng-repeat="paragraph in article.text">
+                <blockquote>
+                    <div ng-bind-html="paragraph | sanitize">
+                </blockquote>
+            </div>
+
+            <div ng-show="article.postscript" class="row">
+                <div class="col-10">
+                    <i class="icon ion-asterisk"></i>
+                </div>
+                <div class="col-90" ng-bind-html="article.postscript | sanitize"></div>
+            </div>
+
+
+        </div>
+
+        <ion-list>
+            <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-document"></i>
+            See more articles ...</a>
+        </ion-list>
+
+
+
+        <h3>Best Forum Threads</h3>
+        <ion-list class="item-text-wrap">
+
+            <div ng-repeat="forum in construct.forums">
+                <ion-item class="item-thumbnail-left" href="{{forum.url}}">
+                    <img ng-src="{{forum.image}}">
+                    <h2>{{forum.sourcename}}</h2>
+                </ion-item>
+
+                <div ng-show="forum.postscript" class="row">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90" ng-bind-html="forum.postscript | sanitize"></div>
+                </div>
+
+            </div>
+
+            <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-chatboxes"></i>
+            See more threads ...</a>
+        </ion-list>
+
+
+
+        <h3>Peer-Reviewed Research</h3>
+
+        <div ng-repeat="paper in construct.papers">
+            <ion-list class="item-text-wrap">
+
+                <ion-item class="item-thumbnail-left" href="{{paper.url}}">
+                    <img ng-src="{{paper.journalicon}}">
+                    <h2>{{paper.title}}</h2>
+                    <p>{{paper.journal}}, {{paper.year}}</p>
+                </ion-item>
+                <br>
+
+            </ion-list>
+
+
+            <!-- Note usage of ng-bind-html, which is used
+                 with the sanitize .filter service -->
+
+            <div ng-show="paper.text" ng-repeat="paragraph in paper.text">
+                <blockquote>
+                    <div ng-bind-html="paragraph | sanitize">
+                </blockquote>
+            </div>
+
+            <div ng-show="paper.images" ng-repeat="image in paper.images">
+                <img ng-src="{{image}}">
+            </div>
+
+            <div ng-show="paper.postscript" class="row">
+                <div class="col-10">
+                    <i class="icon ion-asterisk"></i>
+                </div>
+                <div class="col-90" ng-bind-html="paper.postscript | sanitize"></div>
+            </div>
+
+        </div>
+
+        <ion-list>
+            <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-ios-flask"></i>
+            See more papers ...</a>
+        </ion-list>
+
+
+
+        <h3>Suggested Books</h3>
+
+        <div ng-repeat="book in construct.books">
+            <ion-list class="item-text-wrap">
+                <ion-item class="item-thumbnail-left" href="{{book.url}}">
+                    <img ng-src="{{book.cover}}">
+                    <h2>{{book.title}}</h2>
+                    <p>{{book.author}}</p>
+                </ion-item>
+            </ion-list>
+
+            <div ng-show="book.text" ng-repeat="quote in book.text"><br>
+
+            <!-- Note usage of ng-bind-html, which is used
+                 with the sanitize .filter service -->
+
+                <blockquote>
+                    <div ng-bind-html="quote | sanitize">
+                    </div>
+                </blockquote>
+            </div>
+
+            <div ng-show="book.images" ng-repeat="image in book.images"><br>
+                <img ng-src="{{image}}">
+            </div>
+
+            <div ng-show="book.postscript" class="row">
+                <div class="col-10">
+                    <i class="icon ion-asterisk"></i>
+                </div>
+                <div class="col-90" ng-bind-html="book.postscript | sanitize"></div>
+            </div>
+
+        </div>
+
+        <ion-list>
+            <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-ios-book"></i>
+            See more books ...</a>
+        </ion-list>
+
+
+
+        <h3>Audio &amp; Video</h3>
+        <ion-list class="item-text-wrap">
+
+            <div ng-repeat="resource in construct.media">
+                <ion-item class="item-thumbnail-left" href="{{resource.url}}">
+                    <img ng-src="{{resource.image}}">
+                    <h2>{{resource.title}}</h2>
+                    <p>{{resource.author}}</p>
+                </ion-item>
+
+                <div ng-show="resource.postscript" class="row">
+                    <div class="col-10">
+                        <i class="icon ion-asterisk"></i>
+                    </div>
+                    <div class="col-90" ng-bind-html="resource.postscript | sanitize"></div>
+                </div>
+
+            </div>
+
+            <a class="button button-calm button-full item item-icon-left" href="#"><i class="icon ion-play"></i>
+            See more media ...</a>
+        </ion-list>
+
+        <br><br><br>
+    </ion-content>
+
+</ion-view>
