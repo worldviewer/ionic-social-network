@@ -1,5 +1,9 @@
 angular.module('app.services', [])
 
+    .filter("sanitize", ['$sce', function($sce) {return function(htmlCode){
+            return $sce.trustAsHtml(htmlCode);}
+    }])
+
     .factory("Construct", [function() {
 
     	// fake the data
@@ -7,26 +11,35 @@ angular.module('app.services', [])
             name: "Electric Joule Heating",
             type: "Model",
             shortDefinition: "Electric joule heating proposes that the Earth can be electrically heated by the flow of charged particles coming from the Sun and other cosmic phenomena.",
+
             longDefinition: "Conventional theory models this flow of charged particles fundamentally as a fluid, but these models have been in dispute since their inception. One alternative hypothesis likens these moving charges to an electric current. Advocates point to the fact that the solar wind is oftentimes guided by planetary magnetic fields into the poles, and the presence of hot spots at these poles for a number of planets within our solar system is suggestive of the idea \
             			that this flow of charged particles can heat up the planets it is guided into.",
+
+// Convert to a bulleted list and add in additional claims; make it convincing!
+
             status: "Electric joule heating is not widely known, and much of the data necessary to judge the idea has yet to be taken. No known experiments or observational satellites are currently planned to test it. The concept is not taught to climatologists today, and it appears in no climate textbooks. Electric joule heating is a natural implication of the Electric Universe paradigm.",
+
             experts: [{
                 name: "@ChrisReeve",
                 title: "Layperson Advocate",
                 image: "img/experts/chris-reeve.png"
             },{
+
             	name: "@BillNichols",
             	title: "Atmospheric Scientist",
             	image: "img/experts/bill-nichols.jpg"
             },{
+
             	name: "@PiersCorbyn",
             	title: "Theorist, WeatherAction",
             	image: "img/experts/piers-corbyn.jpg"
             },{
+
             	name: "@BobJohnson",
             	title: "Independent Plasma Theorist",
             	image: "img/experts/bob-johnson.jpg"
             }],
+
             critiques: [{
             	critic: {image: "img/experts/lief-svalgaard.png",
             			 title: "WUWT's Resident Solar Expert",
@@ -35,6 +48,9 @@ angular.module('app.services', [])
             	pics: [{url: "http://wattsupwiththat.com/2013/12/26/new-paper-clouds-blown-by-the-solar-wind/#more-99909",
             		    image: "img/critiques/electric-joule-heating-lsvalgaard.jpg"}]
             }],
+
+// Add in electric joule paper critique
+
             cmaps: [{
             	image: "img/concept-maps/electric-joule-heating-cmap-small.jpg",
 
@@ -54,6 +70,7 @@ angular.module('app.services', [])
                 display: true
 
             },{
+
             	image: "img/concept-maps/structure-of-science-small.jpg",
             	nodes: [{alt:"", title:"", href:"#", shape:"rect", coords:""}],
             	mappername: "@ChrisReeve",
@@ -62,12 +79,14 @@ angular.module('app.services', [])
                 display: false
 
             },{
+
             	image: "img/concept-maps/structure-of-science-small.jpg",
             	nodes: [{alt:"", title:"", href:"#", shape:"rect", coords:""}],
             	mappername: "@ChrisReeve",
             	mapperpic: "img/experts/chris-reeve.png",
                 title: "Plasma",
                 display: false
+
 		    }],
 
             infographics: [{
@@ -77,16 +96,19 @@ angular.module('app.services', [])
                 display: true
 
             }, {
+
                 title: "The Greenhouse Effect Was Not Observed on Venus by the Pioneer Venus Mission; It Was Assumed",
                 url: "https://plus.google.com/108466508041843226480/posts/hKf2QRETTAy",
                 image: "img/infographics/venus-heat-small.jpg",
                 display: true
 
             }, {
+
                 title: "A Mythologist Tells the Story that Scientists Refuse to Teach in University Physics",
                 url: "https://plus.google.com/108466508041843226480/posts/YoTuHGL16ur",
                 image: "img/infographics/hannes-alfven-bio-small.jpg",
                 display: true
+
             }],
 
             articles: [{
@@ -101,22 +123,104 @@ angular.module('app.services', [])
                     "img/articles/wuwt-03-energy-variations.jpg"]
 
             }, {
+
                 title: "Global Warming in a Climate of Ignorance",
                 authors: ["@WalThornhill"],
                 sourcename: "Holoscience",
-                image: "",
+                image: "img/articles/changing-sun-in-xrays.jpg",
                 url: "http://www.holoscience.com/wp/global-warming-in-a-climate-of-ignorance/",
                 text: [""],
                 images: ["img/articles/sun-power-surge.jpg"]
 
             }, {
+
                 title: "Science, Politics and Global Warming",
                 authors: ["@WalThornhill"],
                 sourcename: "Holoscience",
-                image: "img/articles/sun-power-surge.jpg",
+                image: "img/articles/AGW-cartoon.png",
                 url: "http://www.holoscience.com/wp/science-politics-and-global-warming/",
                 text: [""],
                 images: ["img/articles/thornhill-on-climatologists-1.jpg", "img/articles/thornhill-on-climatologists-2.jpg"]
+            }],
+
+            forums: [{
+                sourcename: "Wattsupwiththat Blog",
+                url: "http://wattsupwiththat.com/2015/04/30/how-plasma-connects-the-sun-to-the-climate/",
+                image: "img/forums/earth-sun-connected.jpg",
+                note: "Note that WUWT has a policy against running stories that relate to the Electric Universe, but they appear to have made an exception in this case."
+            }],
+
+            papers: [{
+                journalicon: "img/journals/journal-geophysical-research.png",
+                url: "http://nldr.library.ucar.edu/repository/assets/osgc/OSGC-000-000-004-001.pdf",
+                title: "Possible reasons for underestimating Joule heating in global models: E-Field variability, spatial resolution and vertical velocity",
+                journal: "Journal of Geophysical Research",
+                year: 2007,
+                text: "",
+                images: ["img/papers/electric-joule-heating-1.jpg"]
+            }],
+
+// Add in more quotes from this article
+
+// Another paper on this topic here:
+// http://www.ann-geophys.net/19/773/2001/angeo-19-773-2001.pdf
+
+            books: [{
+                title: "The Manic Sun: Weather Theories Confounded",
+                author: "@NigelCalder",
+                url: "http://www.amazon.com/Manic-Sun-Weather-Theories-Confounded/dp/1899044116/",
+                cover: "img/books/manic-sun.png",
+                images: null,
+                text: ["The solar physicists cared just as much as the official climatologists, about keeping the world safe for their grandchildren.  <span style='background-color:yellow'>They said it was rash to suppose that every possible variation in the Sun&#39;s output of light had been seen by the satellites in the course of a single solar cycle. The solar-terrestrial physicists, for their part, pleaded for consideration of other ways in which the Sun might affect the Earth via the solar wind -- auroras, that sort of thing</span>. They were awfully vague, though, about how it could happen. -p18", 
+
+                    "To achieve its remarkable projection of future temperatures, the report had to argue that the global warming of the twentieth century was largely due to carbon dioxide and other greenhouse gases. The role of the Sun had to be minimized.  The commentary concentrated entirely on changes in the output of radiant energy from the visible disk.  <span style='background-color:yellow'>As for the invisible heliosphere that embraced the Earth in the solar wind, and might contain other possible ways of changing the climate, for Houghton&#39;s group it did not exist.</span> -p41-42"]
+
+            }, {
+
+                title: "A Vast Machine: Computer Models, Climate Data, and the Politics of Global Warming",
+                author: "@PaulNEdwards",
+                url: "http://www.amazon.com/Vast-Machine-Computer-Politics-Infrastructures/dp/0262518635/",
+                cover: "img/books/a-vast-machine.png",
+                images: ["img/books/a-vast-machine-review.jpg"],
+                text: null
+
+            }, {
+
+                title: "The Electric Universe",
+                author: "@WalThornhill",
+                url: "http://www.amazon.com/Electric-Universe-Wallace-Thornhill-Talbott/dp/0977285138/",
+                cover: "img/books/the-electric-universe.png",
+                images: null,
+                text: null
+
+            }],
+
+            media: [{
+                title: "Our Changing Climate and the Variable Sun",
+                author: "@SpaceNews",
+                url: "https://www.youtube.com/watch?v=VIAp_6FAXCY",
+                image: "img/audio-video/space-news.png"
+
+            }, {
+
+                title: "Electric Earth, Electric Weather",
+                author: "@BillNichols",
+                url: "https://www.youtube.com/watch?v=USQIPY3YMfU",
+                image: "img/audio-video/bill-nichols-video.png"
+
+            }, {
+
+                title: "The Reality of Long Range Weather and Climate Forecasting",
+                author: "@PiersCorbyn",
+                url: "https://www.youtube.com/watch?v=6R26PXRrgds",
+                image: "img/audio-video/piers-corbyn-video.png"
+
+            }, {
+
+                title: "Our Variable Sun & Climate Change",
+                author: "@BobJohnson",
+                url: "https://www.youtube.com/watch?v=XdrDg-Nuxdg",
+                image: "img/audio-video/bob-johnson-video.png"
             }]
 
         }];
