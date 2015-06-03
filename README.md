@@ -117,7 +117,13 @@ Swiping down from the original article takes the user to the **believable narrat
 
 Swiping down yet further takes them to **other similar articles** -- a mix of related resources voted on by users, but also suggested by the system (via topic modeling/mapping) and hand-populated by administrators.  The user can continue to swipe downwards many levels to retrieve yet more related articles.
 
-*The core of this idea is to induce people to visualize the inherent structure of science within their heads* -- an idea which sources from physics education researcher <a href="https://www.narst.org/publications/research/Metacogn.cfm">Bob Gowan</a>.  Direct shortcuts to these epistemological layers will not be provided, in order to ensure that this hierarchy is imprinted upon the user's memory; what will be provided is ready access to the diagram, which users can use to facilitate cognitively visualizing the app's navigation.  The interface will enforce as a matter of habit these different aspects of *thinking like a scientist*.  Most importantly, by observing the relationship of the article or paper to the content in each of these levels, the users will learn what a **worldview** is.  This failure to understand what a scientific worldview is is a very serious problem that has plagued modern scientific discourse.
+*The core of this idea is to induce people to visualize the inherent structure of science within their heads* -- an idea which sources from physics education researcher <a href="https://www.narst.org/publications/research/Metacogn.cfm">Bob Gowan</a>.  Direct shortcuts to these epistemological layers will not be provided, in order to ensure that this hierarchy is imprinted upon the user's memory; what will be provided is ready access to the diagram, which users can use to facilitate cognitively visualizing the app's navigation.
+
+<p align="center">
+  <img src="https://github.com/worldviewer/ionic-social-network/blob/master/www/img/readme/structure-of-science-small.jpg" /></a>
+</p>
+
+The interface will enforce as a matter of habit these different aspects of *thinking like a scientist*.  Most importantly, by observing the relationship of the article or paper to the content in each of these levels, the users will learn what a **worldview** is.  This failure to understand what a scientific worldview is is a very serious problem that has plagued modern scientific discourse.
 
 Beyond that, this seems to me an excellent way to break up the various ways we can talk about some resource into their unique spaces, insofar as it creates a separation of concerns for scientific discourse which nevertheless weakly interact.  Later, as I become more knowledgeable about graphics, I can stick with this infrastructure, and simply upgrade the pages, one at a time.
 

@@ -43,7 +43,13 @@
         .state('construct', {
             url: '/constructs',
             templateUrl: 'constructs.html'
+        })
+
+        .state('infographic', {
+            url: '/infographics',
+            templateUrl: 'infographic.html'
         });
+
 
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/');
